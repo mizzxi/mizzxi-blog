@@ -1,0 +1,17 @@
+.footerStyle {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(107, 107, 107);
+  z-index: 0;
+}
+
+a {
+  text-decoration-line: none;
+  color: rgb(107, 107, 107);
+}
+a:hover {
+  color: rgb(105, 105, 105);
+  font-weight: bold;
+}
