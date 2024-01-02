@@ -53,23 +53,27 @@
   position: relative;
   width: 100%;
   height: 420px;
-  background-color: black; /*test*/
+  background-color: rgba(0, 0, 0, 0.411); /*test*/
   text-align: center;
-  margin: 10px auto;
-  overflow: hidden;
-  padding-left: 0px;
+  display: flex;
 }
-
-.slider li {
+.slider div {
   position: relative;
+  flex: 0 0 auto;
   width: 100%;
   height: 100%;
   background-size: cover;
-  list-style: none;
   z-index: 1;
-  /* transform: translate(-30%); */
-  float: left;
 }
+.sliding {
+  transition: all 1s;
+  transform: translate(-100%);
+}
+.slidingBack {
+  transition: all 1s;
+  transform: translate(0%);
+}
+
 #sliderImg1 {
   background-image: url(../images/study/main_etc.jpg);
 }

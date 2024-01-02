@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/css/footer.css";
 
-export default function footer() {
+export default function Footer() {
   const footer_style = {
     fontFamily: "'Noto Sans KR', sans-serif",
     fontSize: "0.8em",

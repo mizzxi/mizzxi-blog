@@ -4,7 +4,7 @@ import SEARCH from "../../assets/images/ico/search.png";
 import DELETE from "../../assets/images/ico/delete.png";
 import "../../assets/css/header.css";
 
-export default function header() {
+export default function Header() {
   const header_style = {
     fontWeight: "bold",
     fontFamily: "'Noto Sans KR', sans-serif",
