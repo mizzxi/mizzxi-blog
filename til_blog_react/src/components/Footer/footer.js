@@ -9,11 +9,11 @@ export default function footer() {
   return (
     /* jshint ignore:start */
     <>
-      <div className="footerStyle">
+      <footer className="footerStyle">
         <a style={footer_style} href="https://github.com/mizzxi" target="blank">
           MADE BY MIZZXI | github ID
         </a>
-      </div>
+      </footer>
     </>
     /* jshint ignore:end */
   );

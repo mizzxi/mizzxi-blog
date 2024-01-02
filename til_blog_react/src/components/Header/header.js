@@ -8,7 +8,7 @@ export default function header() {
   const header_style = {
     fontWeight: "bold",
     fontFamily: "'Noto Sans KR', sans-serif",
-    fontSize: "2.5em",
+    fontSize: "2em",
   };
 
   const menuClick = (e) => {
