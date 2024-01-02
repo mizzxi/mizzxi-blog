@@ -1,0 +1,16 @@
+/* Webkit 브라우저(Chrome, Safari 등)에서 적용되는 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+}
+/* Firefox 브라우저에서 적용되는 스크롤바 스타일 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c0c0c0 #e4e4e4;
+}

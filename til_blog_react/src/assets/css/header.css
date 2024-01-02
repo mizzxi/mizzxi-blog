@@ -68,6 +68,34 @@ input:focus {
   width: 400px;
   height: 100%;
   z-index: 3;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.gnbText {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  top: 120px;
+  left: 50px;
+}
+
+.gnbText li {
+  line-height: 2.5em;
+  list-style: none;
+}
+.profile {
+  position: fixed;
+  bottom: 0px;
+  padding: 50px;
+  left: 0px;
+  color: rgb(107, 107, 107);
+  background-color: rgb(255, 255, 255);
+}
+.profile img {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 30px;
 }
 
 .hide {

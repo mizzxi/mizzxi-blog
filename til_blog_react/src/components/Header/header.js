@@ -3,6 +3,7 @@ import MENU from "../../assets/images/ico/menu.png";
 import SEARCH from "../../assets/images/ico/search.png";
 import DELETE from "../../assets/images/ico/delete.png";
 import "../../assets/css/header.css";
+import GIT from "../../assets/images/ico/git.png";
 
 export default function Header() {
   const header_style = {
@@ -69,6 +70,33 @@ export default function Header() {
           <button className="menu" onClick={deleteClick}>
             <img src={DELETE}></img>
           </button>
+          <div className="gnbText">
+            <h4>
+              <a>전체 보기 (23)</a>
+            </h4>
+            <br />
+            <h5>카테고리</h5>
+            <ul>
+              <li>
+                <a>- TIL</a>
+              </li>
+              <li>
+                <a>- 최근 관심 분야</a>
+              </li>
+              <li>
+                <a>- 포트폴리오</a>
+              </li>
+              <li>
+                <a>- 기타</a>
+              </li>
+            </ul>
+          </div>
+          <div className="profile">
+            <a href="https://github.com/mizzxi" target="blank">
+              <img src={GIT} />
+            </a>
+            <p>Created based on the TISTORY.</p>
+          </div>
         </div>
       </div>
     </>
