@@ -1,1 +1,1 @@
-# TIL-blog
+# mizzxi-blog
