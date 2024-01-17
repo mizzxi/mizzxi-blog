@@ -2,6 +2,22 @@ import React, { useState } from "react";
 import "../../assets/css/info.css";
 import PROFILEPHOTO from "../../assets/images/study/profilePhoto.jpg";
 import PROJECT1 from "../../assets/images/study/main_dali.jpg";
+import {
+  Aws,
+  Bigquery,
+  Chrome,
+  Css,
+  Github,
+  GA,
+  Html,
+  Java,
+  Js,
+  Node,
+  Python,
+  ReactIco,
+  Spring,
+} from "../..";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 export default function MyInfo() {
   return (
@@ -29,16 +45,71 @@ export default function MyInfo() {
             </p>
           </div>
         </div>
-        <div className="skils">
-          <p className="skilsP1" />
-          <p className="skilsP2" />
-          <p className="skilsP3" />
-          <div className="skilsMain">
+        <div className="skills">
+          <p className="skillsP1" />
+          <p className="skillsP2" />
+          <p className="skillsP3" />
+          <div className="skillsMain">
             <h1>Skils</h1>
+            <div className="skill">
+              <div className="skillGroup">
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"JavaScript [Familiar]"}
+                >
+                  <img src={Js} />
+                </span>
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"HTML [Familiar]"}
+                >
+                  <img src={Html} />
+                </span>
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"CSS [Familiar]"}
+                >
+                  <img src={Css} />
+                </span>
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"React [Familiar]"}
+                >
+                  <img src={ReactIco} />
+                </span>
+              </div>
+              <div className="skillGroup">
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"Java [Familiar]"}
+                >
+                  <img src={Java} />
+                </span>
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"Python [Familiar]"}
+                >
+                  <img src={Python} />
+                </span>
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"Node.js [tried]"}
+                >
+                  <img src={Node} />
+                </span>
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"Spring [tried]"}
+                >
+                  <img src={Spring} />
+                </span>
+              </div>
+            </div>
           </div>
-          <p className="skilsP4" />
-          <p className="skilsP5" />
-          <p className="skilsP6" />
+          <ReactTooltip id="skill-tooltip" place="bottom" />
+          <p className="skillsP4" />
+          <p className="skillsP5" />
+          <p className="skillsP6" />
         </div>
         <div className="projects">
           <div className="projectCover" />
