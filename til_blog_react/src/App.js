@@ -4,6 +4,8 @@ import HEADER from "./components/Header/header";
 import MAIN from "./pages/main";
 import FOOTER from "./components/Footer/footer";
 import ".//App.css";
+import TilExplain from "./pages/post/tilExplain";
+import MyInfo from "./pages/post/myInfo";
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
       <HEADER />
       <Routes>
         <Route path="/" element={<MAIN />} />
+        <Route path="/tilExplain" element={<TilExplain />} />
+        <Route path="/myInfo" element={<MyInfo />} />
       </Routes>
       <FOOTER />
     </>

@@ -23,6 +23,7 @@ button {
   position: absolute;
   top: 30px;
   left: 50%;
+  margin: 30px;
   transform: translate(-60%, -50%);
   color: rgb(54, 54, 54);
 }
@@ -35,7 +36,8 @@ button {
 .searchBox {
   position: absolute;
   width: 80%;
-  right: 60px;
+  left: 50%;
+  transform: translate(-50%);
   top: 130px;
   border: none;
   border-bottom: 1.5px solid rgb(131, 131, 131);
@@ -48,14 +50,11 @@ button {
 @media screen and (min-width: 1023px) {
   .searchBox {
     position: absolute;
+    left: auto;
+    transform: translate(0%);
     width: 250px;
     right: 70px;
     top: 20px;
-    border: none;
-    border-bottom: 1.5px solid rgb(131, 131, 131);
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 1em;
-    padding: 10px;
   }
 }
 input:focus {
@@ -83,7 +82,7 @@ input:focus {
   line-height: 2.5em;
   list-style: none;
 }
-.profile {
+.gnbFooter {
   position: fixed;
   bottom: 0px;
   padding: 50px;
@@ -91,7 +90,7 @@ input:focus {
   color: rgb(107, 107, 107);
   background-color: rgb(255, 255, 255);
 }
-.profile img {
+.gnbFooter img {
   position: relative;
   width: 30px;
   height: 30px;

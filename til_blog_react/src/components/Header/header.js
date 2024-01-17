@@ -38,10 +38,6 @@ export default function Header() {
 
   const searchClick = (e) => {};
 
-  const titleClick = (e) => {
-    window.location.reload();
-  };
-
   return (
     /* jshint ignore:start */
     <>
@@ -49,9 +45,9 @@ export default function Header() {
         <button className="menu" onClick={menuClick}>
           <img src={MENU}></img>
         </button>
-        <button style={header_style} className="title" onClick={titleClick}>
+        <a href="/" style={header_style} className="title">
           mizzxi TIL Blog
-        </button>
+        </a>
         <div>
           <input
             id="searchInput"
@@ -84,18 +80,18 @@ export default function Header() {
                 <a>- 최근 관심 분야</a>
               </li>
               <li>
-                <a>- 포트폴리오</a>
+                <a>- 프로젝트</a>
               </li>
               <li>
                 <a>- 기타</a>
               </li>
             </ul>
           </div>
-          <div className="profile">
+          <div className="gnbFooter">
             <a href="https://github.com/mizzxi" target="blank">
               <img src={GIT} />
             </a>
-            <p>Created based on the TISTORY.</p>
+            <p>Created based on TISTORY.</p>
           </div>
         </div>
       </div>
