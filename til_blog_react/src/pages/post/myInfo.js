@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../assets/css/info.css";
 import PROFILEPHOTO from "../../assets/images/study/profilePhoto.jpg";
 import PROJECT1 from "../../assets/images/study/main_dali.jpg";
@@ -20,16 +20,72 @@ import {
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
 export default function MyInfo() {
+  const [profileTitle, setProfileTitle] = useState("hidden");
+  const [skillTitle, setSkillTitle] = useState("hidden");
+  const [projectTitle, setProjectTitle] = useState("hidden");
+
+  const [skillLineTop, setSkillLineTop] = useState("hidden");
+  const [skillLineTop2, setSkillLineTop2] = useState("hidden");
+  const [skillLineTop3, setSkillLineTop3] = useState("hidden");
+  const [skillLineDown, setSkillLineDown] = useState("hidden");
+  const [skillLineDown2, setSkillLineDown2] = useState("hidden");
+  const [skillLineDown3, setSkillLineDown3] = useState("hidden");
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY == 0) {
+      setSkillLineTop("hidden");
+      setSkillLineTop2("hidden");
+      setSkillLineTop3("hidden");
+      setSkillLineDown("hidden");
+      setSkillLineDown2("hidden");
+      setSkillLineDown3("hidden");
+    } else if (window.scrollY >= 5 && window.scrollY < 800) {
+      setSkillTitle("hidden");
+      setProfileTitle("slide-in-right");
+    } else if (window.scrollY >= 800 && window.scrollY < 1050) {
+      setSkillLineTop("skillsP1 scale-up-ver-top");
+    } else if (window.scrollY >= 1050 && window.scrollY < 1150) {
+      setSkillLineTop2("skillsP2 scale-up-ver-top");
+    } else if (window.scrollY >= 1250 && window.scrollY < 1350) {
+      setSkillLineTop3("skillsP3 scale-up-ver-top");
+    } else if (window.scrollY >= 1100 && window.scrollY < 2000) {
+      setProfileTitle("hidden");
+      setProjectTitle("hidden");
+      setSkillTitle("slide-in-left");
+    } else if (window.scrollY >= 2300 && window.scrollY < 2550) {
+      setSkillLineDown("skillsP1 scale-up-ver-top");
+    } else if (window.scrollY >= 2550 && window.scrollY < 2650) {
+      setSkillLineDown2("skillsP2 scale-up-ver-top");
+    } else if (window.scrollY >= 2750 && window.scrollY < 2850) {
+      setSkillLineDown3("skillsP3 scale-up-ver-top");
+    } else if (window.scrollY >= 2300 && window.scrollY < 3800) {
+      setSkillTitle("hidden");
+      setProjectTitle("slide-in-right");
+    } else {
+      setProjectTitle("hidden");
+    }
+  };
+
   return (
     /* jshint ignore:start */
     <>
       <div className="info">
         <div className="profile">
           <div className="profileCover" />
-          <h1>About Me</h1>
+          <h1 className={profileTitle}>About Me</h1>
           <img src={PROFILEPHOTO} />
           <h2>
-            프론트엔드 개발자 <p>박미현</p>
+            프론트엔드 개발자{" "}
+            <div className="">
+              <p>박미현</p>
+            </div>
             <h5>
               프론트엔드 개발자는 웹 및 앱 인터페이스를 디자인하고 구현하는
               전문가로, HTML, CSS, JavaScript 등의 기술을 사용하여 사용자 경험을
@@ -46,11 +102,11 @@ export default function MyInfo() {
           </div>
         </div>
         <div className="skills">
-          <p className="skillsP1" />
-          <p className="skillsP2" />
-          <p className="skillsP3" />
+          <p className={skillLineTop} />
+          <p className={skillLineTop2} />
+          <p className={skillLineTop3} />
           <div className="skillsMain">
-            <h1>Skils</h1>
+            <h1 className={skillTitle}>Skills</h1>
             <div className="skill">
               <div className="skillGroup">
                 <span
@@ -81,7 +137,7 @@ export default function MyInfo() {
               <div className="skillGroup">
                 <span
                   data-tooltip-id="skill-tooltip"
-                  data-tooltip-content={"Java [Familiar]"}
+                  data-tooltip-content={"Java [studying]"}
                 >
                   <img src={Java} />
                 </span>
@@ -93,27 +149,59 @@ export default function MyInfo() {
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
-                  data-tooltip-content={"Node.js [tried]"}
+                  data-tooltip-content={"Node.js [studying]"}
                 >
                   <img src={Node} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
-                  data-tooltip-content={"Spring [tried]"}
+                  data-tooltip-content={"Spring [studying]"}
                 >
                   <img src={Spring} />
+                </span>
+              </div>
+              <div className="skillGroup">
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"Aws [tried]"}
+                >
+                  <img src={Aws} />
+                </span>
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"Chrome extension [tried]"}
+                >
+                  <img src={Chrome} />
+                </span>
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"Google Analytics [tried]"}
+                >
+                  <img src={GA} />
+                </span>
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"BigQuery [tried]"}
+                >
+                  <img src={Bigquery} />
+                </span>
+                <span
+                  data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"Github"}
+                >
+                  <img src={Github} />
                 </span>
               </div>
             </div>
           </div>
           <ReactTooltip id="skill-tooltip" place="bottom" />
-          <p className="skillsP4" />
-          <p className="skillsP5" />
-          <p className="skillsP6" />
+          <p className={skillLineDown} />
+          <p className={skillLineDown2} />
+          <p className={skillLineDown3} />
         </div>
         <div className="projects">
           <div className="projectCover" />
-          <h1>Projects</h1>
+          <h1 className={projectTitle}>Projects</h1>
           <div className="projectMain">
             <a className="project1" href="/">
               <div className="project">
