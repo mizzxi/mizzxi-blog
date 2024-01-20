@@ -23,7 +23,7 @@ export default function Main() {
         <div className="mainTopPost">
           <ul>
             <li>
-              <a href="mizzxi-blog/tilExplain">
+              <a href="tilExplain">
                 <span>
                   <img src={main_til} className="mainTopImg"></img>
                   <p>
@@ -35,7 +35,7 @@ export default function Main() {
               </a>
             </li>
             <li>
-              <a href="mizzxi-blog/myInfo">
+              <a href="myInfo">
                 <span>
                   <img src={main_movie} className="mainTopImg"></img>
                   <p>
