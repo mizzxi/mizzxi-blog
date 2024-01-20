@@ -13,7 +13,7 @@ export default function App() {
     <>
       <HEADER />
       <Routes>
-        <Route path="/" element={<MAIN />} />
+        <Route path="/mizzxi-blog" element={<MAIN />} />
         <Route path="/tilExplain" element={<TilExplain />} />
         <Route path="/myInfo" element={<MyInfo />} />
       </Routes>

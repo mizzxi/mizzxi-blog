@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
 export const Aws = require("./assets/images/ico/skills/aws.png");
 export const Bigquery = require("./assets/images/ico/skills/bigquery.png");
@@ -20,8 +20,8 @@ export const Spring = require("./assets/images/ico/skills/spring.png");
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   /* jshint ignore:start */
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <App />
-  </BrowserRouter>
+  </HashRouter>
   /* jshint ignore:end */
 );

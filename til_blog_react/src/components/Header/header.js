@@ -45,7 +45,7 @@ export default function Header() {
         <button className="menu" onClick={menuClick}>
           <img src={MENU}></img>
         </button>
-        <a href="/" style={header_style} className="title">
+        <a href="/mizzxi-blog" style={header_style} className="title">
           mizzxi TIL Blog
         </a>
         <div>
