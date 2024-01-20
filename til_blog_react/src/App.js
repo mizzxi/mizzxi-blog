@@ -14,9 +14,9 @@ export default function App() {
       <BrowserRouter basename="/mizzxi-blog">
         <HEADER />
         <Routes>
-          <Route path="/" element={<MAIN />} />
-          <Route path="/mizzxi-blog/tilExplain" element={<TilExplain />} />
-          <Route path="/mizzxi-blog/myInfo" element={<MyInfo />} />
+          <Route path="" element={<MAIN />} />
+          <Route path="/tilExplain" element={<TilExplain />} />
+          <Route path="/myInfo" element={<MyInfo />} />
         </Routes>
         <FOOTER />
       </BrowserRouter>
