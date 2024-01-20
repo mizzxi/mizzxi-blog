@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mizzxi-blog/static/css/main.170c313f.css",
-    "main.js": "/mizzxi-blog/static/js/main.17fe581f.js",
+    "main.js": "/mizzxi-blog/static/js/main.472d1591.js",
     "static/media/main_dali2.jpg": "/mizzxi-blog/static/media/main_dali2.22b17b55fa45af6311a5.jpg",
     "static/media/main_movie.jpg": "/mizzxi-blog/static/media/main_movie.62af8f07180028c78616.jpg",
     "static/media/main_etc.jpg": "/mizzxi-blog/static/media/main_etc.5ac75a24ee1a3be0aa29.jpg",
@@ -28,10 +28,10 @@
     "static/media/search.png": "/mizzxi-blog/static/media/search.f8625530f28f5f5d0bfa.png",
     "index.html": "/mizzxi-blog/index.html",
     "main.170c313f.css.map": "/mizzxi-blog/static/css/main.170c313f.css.map",
-    "main.17fe581f.js.map": "/mizzxi-blog/static/js/main.17fe581f.js.map"
+    "main.472d1591.js.map": "/mizzxi-blog/static/js/main.472d1591.js.map"
   },
   "entrypoints": [
     "static/css/main.170c313f.css",
-    "static/js/main.17fe581f.js"
+    "static/js/main.472d1591.js"
   ]
 }
