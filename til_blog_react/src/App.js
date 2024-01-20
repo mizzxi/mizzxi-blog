@@ -11,13 +11,15 @@ export default function App() {
   return (
     /* jshint ignore:start */
     <>
-      <HEADER />
-      <Routes>
-        <Route path="/mizzxi-blog" element={<MAIN />} />
-        <Route path="/tilExplain" element={<TilExplain />} />
-        <Route path="/myInfo" element={<MyInfo />} />
-      </Routes>
-      <FOOTER />
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HEADER />
+        <Routes>
+          <Route path="/mizzxi-blog" element={<MAIN />} />
+          <Route path="/mizzxi-blog/tilExplain" element={<TilExplain />} />
+          <Route path="/mizzxi-blog/myInfo" element={<MyInfo />} />
+        </Routes>
+        <FOOTER />
+      </BrowserRouter>
     </>
     /* jshint ignore:end */
   );

@@ -20,8 +20,6 @@ export const Spring = require("./assets/images/ico/skills/spring.png");
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   /* jshint ignore:start */
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <App />
-  </BrowserRouter>
+  <App />
   /* jshint ignore:end */
 );
