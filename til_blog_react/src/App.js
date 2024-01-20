@@ -11,7 +11,7 @@ export default function App() {
   return (
     /* jshint ignore:start */
     <>
-      <BrowserRouter basename="/mizzxi-blog">
+      <BrowserRouter basename="/">
         <HEADER />
         <Routes>
           <Route path="/" element={<MAIN />} />
