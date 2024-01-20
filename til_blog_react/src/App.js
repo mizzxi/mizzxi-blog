@@ -11,12 +11,12 @@ export default function App() {
   return (
     /* jshint ignore:start */
     <>
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/mizzxi-blog">
         <HEADER />
         <Routes>
           <Route path="/" element={<MAIN />} />
-          <Route path="/tilExplain" element={<TilExplain />} />
-          <Route path="/myInfo" element={<MyInfo />} />
+          <Route path="/mizzxi-blog/tilExplain" element={<TilExplain />} />
+          <Route path="/mizzxi-blog/myInfo" element={<MyInfo />} />
         </Routes>
         <FOOTER />
       </BrowserRouter>
