@@ -25,11 +25,7 @@ export default function MyInfo() {
   const [projectTitle, setProjectTitle] = useState("hidden");
 
   const [skillLineTop, setSkillLineTop] = useState("hidden");
-  const [skillLineTop2, setSkillLineTop2] = useState("hidden");
-  const [skillLineTop3, setSkillLineTop3] = useState("hidden");
   const [skillLineDown, setSkillLineDown] = useState("hidden");
-  const [skillLineDown2, setSkillLineDown2] = useState("hidden");
-  const [skillLineDown3, setSkillLineDown3] = useState("hidden");
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -41,30 +37,18 @@ export default function MyInfo() {
   const handleScroll = () => {
     if (window.scrollY == 0) {
       setSkillLineTop("hidden");
-      setSkillLineTop2("hidden");
-      setSkillLineTop3("hidden");
       setSkillLineDown("hidden");
-      setSkillLineDown2("hidden");
-      setSkillLineDown3("hidden");
     } else if (window.scrollY >= 5 && window.scrollY < 800) {
       setSkillTitle("hidden");
       setProfileTitle("slide-in-right");
     } else if (window.scrollY >= 800 && window.scrollY < 1050) {
-      setSkillLineTop("skillsP1 scale-up-ver-top");
-    } else if (window.scrollY >= 1050 && window.scrollY < 1150) {
-      setSkillLineTop2("skillsP2 scale-up-ver-top");
-    } else if (window.scrollY >= 1250 && window.scrollY < 1350) {
-      setSkillLineTop3("skillsP3 scale-up-ver-top");
+      setSkillLineTop("scale-up-ver-top");
     } else if (window.scrollY >= 1100 && window.scrollY < 2000) {
       setProfileTitle("hidden");
       setProjectTitle("hidden");
       setSkillTitle("slide-in-left");
     } else if (window.scrollY >= 2300 && window.scrollY < 2550) {
-      setSkillLineDown("skillsP1 scale-up-ver-top");
-    } else if (window.scrollY >= 2550 && window.scrollY < 2650) {
-      setSkillLineDown2("skillsP2 scale-up-ver-top");
-    } else if (window.scrollY >= 2750 && window.scrollY < 2850) {
-      setSkillLineDown3("skillsP3 scale-up-ver-top");
+      setSkillLineDown("scale-up-ver-top");
     } else if (window.scrollY >= 2300 && window.scrollY < 3800) {
       setSkillTitle("hidden");
       setProjectTitle("slide-in-right");
@@ -102,9 +86,11 @@ export default function MyInfo() {
           </div>
         </div>
         <div className="skills">
-          <p className={skillLineTop} />
-          <p className={skillLineTop2} />
-          <p className={skillLineTop3} />
+          <div className={skillLineTop}>
+            <p className="skillsP1" />
+            <p className="skillsP2" />
+            <p className="skillsP3" />
+          </div>
           <div className="skillsMain">
             <h1 className={skillTitle}>Skills</h1>
             <div className="skill">
@@ -195,9 +181,11 @@ export default function MyInfo() {
             </div>
           </div>
           <ReactTooltip id="skill-tooltip" place="bottom" />
-          <p className={skillLineDown} />
-          <p className={skillLineDown2} />
-          <p className={skillLineDown3} />
+          <div className={skillLineDown}>
+            <p className="skillsP4" />
+            <p className="skillsP5" />
+            <p className="skillsP6" />
+          </div>
         </div>
         <div className="projects">
           <div className="projectCover" />

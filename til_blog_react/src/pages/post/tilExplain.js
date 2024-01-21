@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import main_til from "../../assets/images/study/main_til.jpg";
 import "../../assets/css/post.css";
+import PostList from "../../components/postList";
 
 export default function TilExplain() {
   return (
@@ -33,6 +34,7 @@ export default function TilExplain() {
         </div>
       </div>
       <div className="comment"></div>
+      <PostList title="TIL" />
     </>
     /* jshint ignore:end */
   );

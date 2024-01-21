@@ -47,7 +47,7 @@ export default function Main() {
               </a>
             </li>
             <li>
-              <a>
+              <a href="project-dali">
                 <span>
                   <img src={main_dali2} className="mainTopImg"></img>
                   <p>

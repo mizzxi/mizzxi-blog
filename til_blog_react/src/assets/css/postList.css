@@ -1,0 +1,34 @@
+.postList {
+  position: absolute;
+  right: 5%;
+  width: 20%;
+  margin-top: 350px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.5em;
+}
+
+.postListMain {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 2px solid rgba(128, 128, 128, 0.3);
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+}
+.postListBox {
+}
+.postListTitle {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.postListSubTitle {
+  font-size: 0.8em;
+  width: 80%;
+}
+
+.postListDate {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: right;
+  border-bottom: 2px solid rgba(61, 61, 61, 0.158);
+}

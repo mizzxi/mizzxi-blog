@@ -4,8 +4,8 @@
   margin-top: 250px;
   padding-bottom: 250px;
   font-family: "Noto Sans KR", sans-serif;
-  left: 50%;
-  transform: translate(-50%);
+  left: 15%;
+  transform: translate(-15%);
 }
 .post img {
   width: 100%;
@@ -17,9 +17,14 @@
 }
 @media screen and (min-width: 1023px) {
   .post {
-    width: 50%;
+    width: 60%;
   }
   .postText {
     font-size: 20pt;
   }
+}
+
+.list {
+  list-style: decimal;
+  line-height: 2em;
 }
