@@ -3,12 +3,13 @@ import "../../../assets/css/post.css";
 import Poster from "../../../assets/images/study/main_dali2.jpg";
 import Dali_dashboard from "../../../assets/images/study/main_dali.jpg";
 import Structure from "../../../assets/images/study/project_dali_structure.jpg";
+import ProjectListBottom from "../../../components/postListBottom";
 
 export default function Dali() {
   return (
     /* jshint ignore:start */
     <>
-      <div className="post">
+      <div className="projectPost">
         <div>
           <a>프로젝트</a>
           <h1>졸업작품</h1>
@@ -70,8 +71,30 @@ export default function Dali() {
             <img src={Poster} />
           </p>
         </div>
+        <hr />
+        <div className="postTag">
+          <h6>&#128204;태그</h6>
+          <ul>
+            <li>
+              <a>#대시보드</a>
+            </li>
+            <li>
+              <a>#SpringBatch</a>
+            </li>
+            <li>
+              <a>#ElasticSearch</a>
+            </li>
+            <li>
+              <a>#Kibana</a>
+            </li>
+            <li>
+              <a>#졸업작품</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="comment"></div>
+      <ProjectListBottom title="project" />
     </>
     /* jshint ignore:end */
   );

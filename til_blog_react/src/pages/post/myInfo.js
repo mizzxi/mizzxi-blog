@@ -191,7 +191,7 @@ export default function MyInfo() {
           <div className="projectCover" />
           <h1 className={projectTitle}>Projects</h1>
           <div className="projectMain">
-            <a className="project1" href="/">
+            <a className="project1" href="project-dali">
               <div className="project">
                 <img src={PROJECT1} />
               </div>

@@ -1,0 +1,66 @@
+.listTitle {
+  position: absolute;
+  right: 6.5%;
+  width: 18%;
+  margin-top: 450px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2em;
+}
+.postList {
+  position: absolute;
+  height: 700px;
+  overflow-y: auto;
+  right: 5%;
+  width: 18%;
+  margin-top: 520px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2em;
+}
+@media screen and (min-width: 1023px) {
+  .postList {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .listTitle {
+    margin-top: 440px;
+    font-size: 1em;
+  }
+}
+.postList::-webkit-scrollbar {
+  width: 5px;
+}
+.postList::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;
+  border-radius: 10px;
+}
+.postList::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+}
+
+.postListMain {
+  margin-top: 20px;
+  border-top: 2px solid rgba(128, 128, 128, 0.3);
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+}
+.postListBox {
+}
+.postListTitle {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.postListSubTitle {
+  font-size: 0.7em;
+  width: 80%;
+}
+
+.postListDate {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: right;
+  border-bottom: 1px solid rgba(61, 61, 61, 0.158);
+  padding-right: 5px;
+  font-size: 0.7em;
+}

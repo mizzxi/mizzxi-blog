@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import main_til from "../../assets/images/study/main_til.jpg";
 import "../../assets/css/post.css";
-import PostList from "../../components/postList";
+import PostListSide from "../../components/postListSide";
 
 export default function TilExplain() {
   return (
@@ -32,9 +32,24 @@ export default function TilExplain() {
             과정을 즐기는 이용자들에게 인기를 끌고 있습니다.
           </p>
         </div>
+        <hr />
+        <div className="postTag">
+          <h6>&#128204;태그</h6>
+          <ul>
+            <li>
+              <a>#TIL</a>
+            </li>
+            <li>
+              <a>#Blog</a>
+            </li>
+            <li>
+              <a>#공부</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="comment"></div>
-      <PostList title="TIL" />
+      <PostListSide title="til" />
     </>
     /* jshint ignore:end */
   );

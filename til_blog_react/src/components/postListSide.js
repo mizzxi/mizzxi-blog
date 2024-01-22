@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "../assets/css/postList.css";
+import "../assets/css/postListSide.css";
 import data from "../assets/post/post.json";
 
-export default function PostList({ title }) {
-  const [mainTitle] = useState(data.til.mainTitle);
-  const [subTitle] = useState(data.til.subTitle);
-  const [date] = useState(data.til.date);
+export default function PostListSide({ title }) {
+  let { mainTitle, subTitle, date } = data.til;
 
   useEffect(() => {
     mainTitle.forEach((text, i) => {
@@ -36,8 +34,8 @@ export default function PostList({ title }) {
   return (
     /* jshint ignore:start */
     <>
+      <div className="listTitle">&#128195;카테고리 - {title}의 다른 글</div>
       <div className="postList">
-        카테고리 - {title}의 다른 글
         <div className="postListMain" id="postListMain"></div>
       </div>
     </>
