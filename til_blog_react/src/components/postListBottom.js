@@ -3,7 +3,7 @@ import "../assets/css/postListBottom.css";
 import data from "../assets/post/post.json";
 
 export default function PostListBottom({ title }) {
-  let { mainTitle, subTitle, date, img } = data.project;
+  let { mainTitle, subTitle, date, img } = data[title];
 
   useEffect(() => {
     mainTitle.forEach((text, i) => {

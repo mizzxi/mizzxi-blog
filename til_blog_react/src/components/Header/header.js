@@ -4,8 +4,13 @@ import SEARCH from "../../assets/images/ico/search.png";
 import DELETE from "../../assets/images/ico/delete.png";
 import "../../assets/css/header.css";
 import GIT from "../../assets/images/ico/git.png";
+import { useNavigate } from "react-router-dom";
+import data from "../../assets/post/post.json";
 
 export default function Header() {
+  const postCount = data.all.mainTitle.length;
+
+  const navigate = useNavigate();
   const header_style = {
     fontWeight: "bold",
     fontFamily: "'Noto Sans KR', sans-serif",
@@ -38,6 +43,11 @@ export default function Header() {
 
   const searchClick = (e) => {};
 
+  const postListMove = (e) => {
+    console.log(e.target.id);
+    navigate("postList", { state: { title: e.target.id } });
+  };
+
   return (
     /* jshint ignore:start */
     <>
@@ -68,19 +78,25 @@ export default function Header() {
           </button>
           <div className="gnbText">
             <h4>
-              <a>전체 보기 (23)</a>
+              <a href="postList" onClick={postListMove} id="all">
+                전체 보기 ({postCount})
+              </a>
             </h4>
             <br />
             <h5>카테고리</h5>
             <ul>
               <li>
-                <a>- TIL</a>
+                <a href="postList" onClick={postListMove} id="til">
+                  - TIL
+                </a>
               </li>
               <li>
                 <a>- 최근 관심 분야</a>
               </li>
               <li>
-                <a>- 프로젝트</a>
+                <a href="postList" onClick={postListMove} id="project">
+                  - 프로젝트
+                </a>
               </li>
               <li>
                 <a>- 기타</a>

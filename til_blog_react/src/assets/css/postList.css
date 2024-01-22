@@ -1,62 +1,57 @@
-.listTitleSide {
+.listTitle {
   position: absolute;
-  right: 6.5%;
-  width: 18%;
-  margin-top: 450px;
+  left: 15%;
+  width: 80%;
+  margin-top: 300px;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.2em;
 }
-.postListSide {
+.postList {
   position: absolute;
-  height: 700px;
-  overflow-y: auto;
-  right: 5%;
-  width: 18%;
-  margin-top: 520px;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 350px;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.2em;
 }
 @media screen and (min-width: 1023px) {
-  .postListSide {
-    width: 20%;
+  .postList {
+    width: 70%;
   }
 }
-@media screen and (max-width: 600px) {
-  .listTitleSide {
-    margin-top: 440px;
-    font-size: 1em;
-  }
-}
-.postListSide::-webkit-scrollbar {
+
+.postList::-webkit-scrollbar {
   width: 5px;
 }
-.postListSide::-webkit-scrollbar-thumb {
+.postList::-webkit-scrollbar-thumb {
   background-color: #d3d3d3;
   border-radius: 10px;
 }
-.postListSide::-webkit-scrollbar-track {
+.postList::-webkit-scrollbar-track {
   background-color: #ebebeb;
 }
 
-.postListMainSide {
+.postListMain {
   margin-top: 20px;
   border-top: 2px solid rgba(128, 128, 128, 0.3);
   border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+  margin-bottom: 300px;
 }
-.postListBoxSide {
+.postListBox {
 }
-.postListTitleSide {
+.postListTitle {
   font-size: 0.8em;
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 20px;
 }
-.postListSubTitleSide {
+.postListSubTitle {
   font-size: 0.7em;
   width: 80%;
 }
 
-.postListDateSide {
+.postListDate {
   position: relative;
   padding-bottom: 10px;
   text-align: right;

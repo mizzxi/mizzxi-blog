@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "../assets/css/postListSide.css";
+import "../assets/css/postList.css";
 import data from "../assets/post/post.json";
+import { useLocation } from "react-router-dom";
 
-export default function PostListSide({ title }) {
+export default function PostList() {
+  const location = useLocation();
+  const title = location.state.title;
+
   let { mainTitle, subTitle, date } = data[title];
 
   useEffect(() => {
@@ -16,10 +20,10 @@ export default function PostListSide({ title }) {
       postListSubTitle.innerHTML = subTitle[i];
       postListDate.innerHTML = date[i];
 
-      postList.className = "postListBoxSide";
-      postListTitle.className = "postListTitleSide";
-      postListSubTitle.className = "postListSubTitleSide";
-      postListDate.className = "postListDateSide";
+      postList.className = "postListBox";
+      postListTitle.className = "postListTitle";
+      postListSubTitle.className = "postListSubTitle";
+      postListDate.className = "postListDate";
 
       postList.appendChild(postListTitle);
       postList.appendChild(postListSubTitle);
@@ -34,9 +38,9 @@ export default function PostListSide({ title }) {
   return (
     /* jshint ignore:start */
     <>
-      <div className="listTitleSide">&#128195;카테고리 - {title}의 다른 글</div>
-      <div className="postListSide">
-        <div className="postListMainSide" id="postListMain"></div>
+      <div className="listTitle">&#128195;카테고리 - {title}의 모든 글</div>
+      <div className="postList">
+        <div className="postListMain" id="postListMain"></div>
       </div>
     </>
     /* jshint ignore:end */

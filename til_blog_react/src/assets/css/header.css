@@ -35,7 +35,7 @@ button {
 
 .searchBox {
   position: absolute;
-  width: 80%;
+  width: 70%;
   left: 50%;
   transform: translate(-50%);
   top: 130px;
@@ -47,13 +47,13 @@ button {
   z-index: 1;
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1123px) {
   .searchBox {
     position: absolute;
     left: auto;
     transform: translate(0%);
     width: 250px;
-    right: 70px;
+    right: 100px;
     top: 20px;
   }
 }

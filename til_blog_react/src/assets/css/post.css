@@ -25,6 +25,7 @@
 .projectPost img {
   font-size: 10pt;
   margin-top: 30px;
+  margin-bottom: 100px;
 }
 @media screen and (min-width: 1023px) {
   .post {

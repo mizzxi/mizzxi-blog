@@ -4,9 +4,10 @@ import HEADER from "./components/Header/header";
 import MAIN from "./pages/main";
 import FOOTER from "./components/Footer/footer";
 import "./App.css";
+import PostList from "./pages/postList";
 import TilExplain from "./pages/post/tilExplain";
 import MyInfo from "./pages/post/myInfo";
-import Dali from "./pages/post/projects/dali-dashboard";
+import Dali from "./pages/post/projects/project-dali";
 import ReactGA from "react-ga";
 import { createBrowserHistory } from "history";
 
@@ -29,6 +30,7 @@ export default function App() {
         <HEADER />
         <Routes>
           <Route path="" element={<MAIN />} />
+          <Route path="/postList" element={<PostList />} />
           <Route path="/tilExplain" element={<TilExplain />} />
           <Route path="/myInfo" element={<MyInfo />} />
           <Route path="/project-dali" element={<Dali />} />

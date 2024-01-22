@@ -20,6 +20,7 @@ a:hover {
   position: fixed;
   bottom: 10px;
   right: 0px;
+  z-index: 1;
 }
 .footerUP img {
   width: 100px;
