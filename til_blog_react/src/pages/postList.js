@@ -10,6 +10,11 @@ export default function PostList() {
   let { mainTitle, subTitle, date } = data[title];
 
   useEffect(() => {
+    let clean = document.getElementById("postListMain");
+    if (clean.childElementCount != 0) {
+      while (clean.hasChildNodes()) clean.removeChild(clean.firstChild);
+    }
+
     mainTitle.forEach((text, i) => {
       let postList = document.createElement("a");
       let postListTitle = document.createElement("h3");

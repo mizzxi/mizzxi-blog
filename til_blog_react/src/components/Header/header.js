@@ -45,6 +45,7 @@ export default function Header() {
 
   const postListMove = (e) => {
     console.log(e.target.id);
+    deleteClick();
     navigate("postList", { state: { title: e.target.id } });
   };
 
@@ -78,7 +79,7 @@ export default function Header() {
           </button>
           <div className="gnbText">
             <h4>
-              <a href="postList" onClick={postListMove} id="all">
+              <a onClick={postListMove} id="all">
                 전체 보기 ({postCount})
               </a>
             </h4>
@@ -86,7 +87,7 @@ export default function Header() {
             <h5>카테고리</h5>
             <ul>
               <li>
-                <a href="postList" onClick={postListMove} id="til">
+                <a onClick={postListMove} id="til">
                   - TIL
                 </a>
               </li>
@@ -94,7 +95,7 @@ export default function Header() {
                 <a>- 최근 관심 분야</a>
               </li>
               <li>
-                <a href="postList" onClick={postListMove} id="project">
+                <a onClick={postListMove} id="project">
                   - 프로젝트
                 </a>
               </li>
