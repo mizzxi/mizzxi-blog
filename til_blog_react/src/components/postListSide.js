@@ -17,7 +17,7 @@ export default function PostListSide({ title }) {
       postListDate.innerHTML = date[i];
 
       postList.className = "postListBoxSide";
-      postListTitle.className = "postListTitleSide";
+      postListTitle.className = "postListTitleSide highlight";
       postListSubTitle.className = "postListSubTitleSide";
       postListDate.className = "postListDateSide";
 
