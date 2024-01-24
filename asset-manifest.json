@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mizzxi-blog/static/css/main.7cdb1c0c.css",
-    "main.js": "/mizzxi-blog/static/js/main.c212dfe5.js",
+    "main.css": "/mizzxi-blog/static/css/main.f032c2ab.css",
+    "main.js": "/mizzxi-blog/static/js/main.91869f8b.js",
     "static/media/main_dali2.jpg": "/mizzxi-blog/static/media/main_dali2.22b17b55fa45af6311a5.jpg",
     "static/media/main_movie.jpg": "/mizzxi-blog/static/media/main_movie.62af8f07180028c78616.jpg",
     "static/media/main_etc.jpg": "/mizzxi-blog/static/media/main_etc.5ac75a24ee1a3be0aa29.jpg",
@@ -28,11 +28,11 @@
     "static/media/js.png": "/mizzxi-blog/static/media/js.1a2f4251ceef5924f857.png",
     "static/media/search.png": "/mizzxi-blog/static/media/search.f8625530f28f5f5d0bfa.png",
     "index.html": "/mizzxi-blog/index.html",
-    "main.7cdb1c0c.css.map": "/mizzxi-blog/static/css/main.7cdb1c0c.css.map",
-    "main.c212dfe5.js.map": "/mizzxi-blog/static/js/main.c212dfe5.js.map"
+    "main.f032c2ab.css.map": "/mizzxi-blog/static/css/main.f032c2ab.css.map",
+    "main.91869f8b.js.map": "/mizzxi-blog/static/js/main.91869f8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cdb1c0c.css",
-    "static/js/main.c212dfe5.js"
+    "static/css/main.f032c2ab.css",
+    "static/js/main.91869f8b.js"
   ]
 }
