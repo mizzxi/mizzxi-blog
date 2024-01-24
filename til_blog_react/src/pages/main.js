@@ -97,44 +97,33 @@ export default function Main() {
           <button id="next" type="button" onClick={slider_next}></button>
         </div>
         <div className="mainCard">
+          <img src={main_til} />
           <div className="cardBox">
-            <img src={main_til} />
-            <p>
+            <div>
               웹 개발자는 웹사이트를 만들고 유지보수하는 전문가로, 프론트엔드와
               백엔드 개발을 담당합니다. HTML, CSS, JavaScript 등을 사용하여
               사용자 경험을 개선하고, 서버 측 로직과 데이터베이스와 상호작용하여
               웹 애플리케이션을 구축합니다. 끊임없이 발전하는 기술에 대한 학습과
               적응 능력이 필요합니다.
-            </p>
+            </div>
           </div>
+          <img src={main_movie} />
           <div className="cardBox">
-            <img src={main_movie} />
-            <p>
+            <div>
               1. 토마토기법 (Pomodoro Technique): 25분간 집중하고 5분 휴식을
               반복하는 방식으로 학습 시간을 효율적으로 활용하세요. 2. 스크린
               공유 앱 활용: 수업이나 스터디 중에 중요한 내용이나 문제를 스크린
               공유 앱을 사용하여 공유하면서 학습하면 효과적입니다. 3. 강의 녹음:
               수업이나 강의 중에 핵심 내용을 녹음해두면 나중에 다시 듣거나
               복습할 때 도움이 됩니다.
-            </p>
+            </div>
           </div>
+          <img src={main_etc} />
           <div className="cardBox">
-            <img src={main_etc} />
-            <p>
+            <div>
               물망초 피는 계절엔 꽃들이 피어나는데 나도 그 꽃잎 속에 아름다운
               꿈이 피어나리
-            </p>
-          </div>
-          <div className="cardBox">
-            <img src={main_movie} />
-            <p>
-              1. 토마토기법 (Pomodoro Technique): 25분간 집중하고 5분 휴식을
-              반복하는 방식으로 학습 시간을 효율적으로 활용하세요. 2. 스크린
-              공유 앱 활용: 수업이나 스터디 중에 중요한 내용이나 문제를 스크린
-              공유 앱을 사용하여 공유하면서 학습하면 효과적입니다. 3. 강의 녹음:
-              수업이나 강의 중에 핵심 내용을 녹음해두면 나중에 다시 듣거나
-              복습할 때 도움이 됩니다.
-            </p>
+            </div>
           </div>
         </div>
       </div>

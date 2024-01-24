@@ -38,16 +38,16 @@ export default function MyInfo() {
     if (window.scrollY == 0) {
       setSkillLineTop("hidden");
       setSkillLineDown("hidden");
-    } else if (window.scrollY >= 5 && window.scrollY < 800) {
+    } else if (window.scrollY >= 3 && window.scrollY < 700) {
       setSkillTitle("hidden");
       setProfileTitle("slide-in-right");
-    } else if (window.scrollY >= 800 && window.scrollY < 1050) {
+    } else if (window.scrollY >= 700 && window.scrollY < 1000) {
       setSkillLineTop("scale-up-ver-top");
-    } else if (window.scrollY >= 1100 && window.scrollY < 2000) {
+    } else if (window.scrollY >= 1050 && window.scrollY < 1900) {
       setProfileTitle("hidden");
       setProjectTitle("hidden");
       setSkillTitle("slide-in-left");
-    } else if (window.scrollY >= 2300 && window.scrollY < 2550) {
+    } else if (window.scrollY >= 2200 && window.scrollY < 2450) {
       setSkillLineDown("scale-up-ver-top");
     } else if (window.scrollY >= 2300 && window.scrollY < 3800) {
       setSkillTitle("hidden");
