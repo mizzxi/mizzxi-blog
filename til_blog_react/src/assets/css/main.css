@@ -7,7 +7,6 @@
   z-index: 1;
   top: 200px;
   padding: 20px;
-  padding-bottom: 200px;
   overflow-x: hidden;
 }
 
@@ -162,8 +161,6 @@
 
 .mainCard {
   position: relative;
-  vertical-align: top;
-  height: 1000px;
 }
 .cardBox {
   width: 250px;
