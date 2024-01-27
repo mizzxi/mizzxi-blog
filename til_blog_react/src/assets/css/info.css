@@ -74,26 +74,58 @@
 }
 .profile h5 {
   padding-left: 40%;
+  height: 280px;
+  overflow-y: auto;
+  padding-right: 10px;
+  line-height: 1.4em;
+}
+.profile h5 div {
+  color: #92c7cf;
+  display: inline-block;
 }
 
 .profile .mind {
   position: relative;
   width: 80%;
-  height: 230px;
+  height: 180px;
   top: 300px;
   text-align: center;
   background-color: #fbf9f1;
   left: 50%;
   transform: translate(-50%);
   border-radius: 50px;
-  font-size: 2em;
   color: #000000;
-  padding: 50px;
+  padding: 30px;
+  overflow: auto;
 }
 .profile .mind p {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  padding-top: 30px;
+  font-size: 1em;
+}
+#typingWrapper {
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+#typing {
+  font-size: 1.15em;
+  color: #74a1a8;
+  width: 58ch;
+  animation: typing 7s steps(50) infinite,
+    blink 0.8s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .skillsP1 {
@@ -222,6 +254,7 @@
   transform: translate(-50%);
   width: 80%;
   height: 400px;
+  padding: 50px;
   margin-bottom: 150px;
   background-color: #e5e1da;
   border-radius: 50px;
@@ -239,43 +272,19 @@
 }
 
 .project img {
-  position: relative;
-  left: 10%;
+  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 85%;
+  border-radius: 20px;
+  float: left;
 }
-.project2 img {
-  left: 90%;
-  transform: translate(-250px, -50%);
+
+#projectText {
 }
-.project img:hover {
-  width: 500px;
-  height: auto;
-  border-radius: 10px;
-}
-.project2 img:hover {
-  left: 60%;
-}
-@media screen and (max-width: 1123px) {
-  .project img {
-    width: 130px;
-    height: 130px;
-    left: 5%;
-    top: 15%;
-    transform: translateY(-15%);
-  }
-  .project2 img {
-    left: 90%;
-    left: 95%;
-    transform: translate(-130px, -15%);
-  }
-  .project2 img:hover {
-    left: 32%;
-  }
-}
+
 .contact {
   position: relative;
   top: 400px;

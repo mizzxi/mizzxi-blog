@@ -16,6 +16,7 @@ export const Node = require("./assets/images/ico/skills/node.png");
 export const Python = require("./assets/images/ico/skills/python.png");
 export const ReactIco = require("./assets/images/ico/skills/react.png");
 export const Spring = require("./assets/images/ico/skills/spring.png");
+export const Elastic = require("./assets/images/ico/skills/elastic.png");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

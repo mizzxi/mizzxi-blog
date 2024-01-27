@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../assets/css/info.css";
 import PROFILEPHOTO from "../../assets/images/study/profilePhoto.jpg";
 import PROJECT1 from "../../assets/images/study/main_dali.jpg";
+import PROJECT2 from "../../assets/images/study/main_graph.jpg";
 import {
   Aws,
   Bigquery,
@@ -16,6 +17,7 @@ import {
   Python,
   ReactIco,
   Spring,
+  Elastic,
 } from "../..";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
@@ -38,10 +40,10 @@ export default function MyInfo() {
     if (window.scrollY == 0) {
       setSkillLineTop("hidden");
       setSkillLineDown("hidden");
-    } else if (window.scrollY >= 3 && window.scrollY < 700) {
+    } else if (window.scrollY >= 3 && window.scrollY < 600) {
       setSkillTitle("hidden");
       setProfileTitle("slide-in-right");
-    } else if (window.scrollY >= 700 && window.scrollY < 1000) {
+    } else if (window.scrollY >= 500 && window.scrollY < 1000) {
       setSkillLineTop("scale-up-ver-top");
     } else if (window.scrollY >= 1050 && window.scrollY < 1900) {
       setProfileTitle("hidden");
@@ -57,6 +59,10 @@ export default function MyInfo() {
     }
   };
 
+  const [project, setProject] = useState("project");
+
+  const projectClick = () => {};
+
   return (
     /* jshint ignore:start */
     <>
@@ -66,22 +72,31 @@ export default function MyInfo() {
           <h1 className={profileTitle}>About Me</h1>
           <img src={PROFILEPHOTO} />
           <h2>
-            프론트엔드 개발자{" "}
+            프론트엔드 개발자
             <div className="">
               <p>박미현</p>
             </div>
             <h5>
-              프론트엔드 개발자는 웹 및 앱 인터페이스를 디자인하고 구현하는
-              전문가로, HTML, CSS, JavaScript 등의 기술을 사용하여 사용자 경험을
-              향상시키는 역할을 합니다. 사용자 인터페이스(UI)와 사용자
-              경험(UX)에 중점을 두며, 디자인과 개발의 조화를 이루어 웹 및 앱의
-              시각적 및 기능적 측면을 책임집니다. 최신 웹 기술 및 디자인
-              트렌드를 따라가며 창의적이고 사용자 친화적인 환경을 만들어냅니다.
+              어릴 적부터 게임을 좋아했습니다. 단순히 게임을 플레이하는 것에
+              그치지 않고, 게임의 스토리와 구성을 주의 깊게 관찰하며, UI/UX를
+              분석하고 개선하는 것에 흥미를 느꼈습니다. 이제는 직접 개발을
+              하면서 사용자의 관점에서 기획하여 새로운 프로그램을 만들어내고, 또
+              피드백을 받아 발전시켜가는 과정이 재미있습니다. 개발자에게는
+              지속적인 학습, 사용자 중심 사고, 협업과 소통 능력이 중요하다
+              생각합니다. 저는 앞으로도 이러한 가치를 중심으로 공부하여
+              사람들에게 <div>필요한 개발자</div>가 되고 싶습니다.
             </h5>
           </h2>
           <div className="mind">
             <p>
-              지속적 학습과 개방된 마음 & 사용자 중심 사고 & 협업과 소통 능력
+              내가 생각하는 프론드엔드 개발자의 중요한 역량 세가지:
+              <br />
+              <div id="typingWrapper">
+                <div id="typing">
+                  지속적 학습과 개방된 마음 & 사용자 중심 사고 & 협업과 소통
+                  능력
+                </div>
+              </div>
             </p>
           </div>
         </div>
@@ -173,6 +188,12 @@ export default function MyInfo() {
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
+                  data-tooltip-content={"ElasticSearch & Kibana [tried]"}
+                >
+                  <img src={Elastic} />
+                </span>
+                <span
+                  data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"Github"}
                 >
                   <img src={Github} />
@@ -191,14 +212,22 @@ export default function MyInfo() {
           <div className="projectCover" />
           <h1 className={projectTitle}>Projects</h1>
           <div className="projectMain">
-            <a className="project1" href="project-dali">
+            <a className="project1" onClick={projectClick}>
               <div className="project">
                 <img src={PROJECT1} />
+                <div id="projectText">
+                  {/* <h4>여성 의류 쇼핑몰 전략 대시보드 제작</h4>
+                  <p>
+                    여성 의류 쇼핑몰 달리호텔의 제품, 고객, 매출 등의 데이터를
+                    수집 가공하여 판매성과 및 추세를 파악할 수 있는 대시보드
+                    제작 프로젝트
+                  </p> */}
+                </div>
               </div>
             </a>
             <a className="project2" href="/">
               <div className="project">
-                <img src={PROJECT1} />
+                <img src={PROJECT2} />
               </div>
             </a>
             <a className="project3" href="/">
