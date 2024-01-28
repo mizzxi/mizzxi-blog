@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/mizzxi-blog/static/css/main.513c0423.css",
-    "main.js": "/mizzxi-blog/static/js/main.91869f8b.js",
+    "main.css": "/mizzxi-blog/static/css/main.aa1d861b.css",
+    "main.js": "/mizzxi-blog/static/js/main.ffb372ab.js",
     "static/media/main_dali2.jpg": "/mizzxi-blog/static/media/main_dali2.22b17b55fa45af6311a5.jpg",
     "static/media/main_movie.jpg": "/mizzxi-blog/static/media/main_movie.62af8f07180028c78616.jpg",
+    "static/media/main_graph.jpg": "/mizzxi-blog/static/media/main_graph.de0731c66a32cc04b351.jpg",
     "static/media/main_etc.jpg": "/mizzxi-blog/static/media/main_etc.5ac75a24ee1a3be0aa29.jpg",
+    "static/media/profilePhoto.jpg": "/mizzxi-blog/static/media/profilePhoto.d7a91e78994f24b1e8b0.jpg",
     "static/media/back_skill2.jpg": "/mizzxi-blog/static/media/back_skill2.e6011a556a0d4842db91.jpg",
     "static/media/main_til.jpg": "/mizzxi-blog/static/media/main_til.e97daf61b6de8eef0f9a.jpg",
-    "static/media/profilePhoto.jpg": "/mizzxi-blog/static/media/profilePhoto.e2e577b8e8dbeeb1e7d3.jpg",
     "static/media/back_skill.jpg": "/mizzxi-blog/static/media/back_skill.36e3404a1847116d6c10.jpg",
     "static/media/chrome.png": "/mizzxi-blog/static/media/chrome.0ccd8e49264f820f7088.png",
     "static/media/up2.png": "/mizzxi-blog/static/media/up2.5e6dd60f1eaae8ae0ba3.png",
@@ -16,6 +17,7 @@
     "static/media/python.png": "/mizzxi-blog/static/media/python.696fb673ae2c4cb29d89.png",
     "static/media/react.png": "/mizzxi-blog/static/media/react.83c3e3aece294851eb93.png",
     "static/media/main_dali.jpg": "/mizzxi-blog/static/media/main_dali.ed97e2bf990c5f9945e2.jpg",
+    "static/media/elastic.png": "/mizzxi-blog/static/media/elastic.28d032a0594c5711480b.png",
     "static/media/java.png": "/mizzxi-blog/static/media/java.297a1ddc8515cf50dbe9.png",
     "static/media/spring.png": "/mizzxi-blog/static/media/spring.352de52f4da7ef9fe8bf.png",
     "static/media/aws.png": "/mizzxi-blog/static/media/aws.6c3c25ff259081bdafe8.png",
@@ -28,11 +30,11 @@
     "static/media/js.png": "/mizzxi-blog/static/media/js.1a2f4251ceef5924f857.png",
     "static/media/search.png": "/mizzxi-blog/static/media/search.f8625530f28f5f5d0bfa.png",
     "index.html": "/mizzxi-blog/index.html",
-    "main.513c0423.css.map": "/mizzxi-blog/static/css/main.513c0423.css.map",
-    "main.91869f8b.js.map": "/mizzxi-blog/static/js/main.91869f8b.js.map"
+    "main.aa1d861b.css.map": "/mizzxi-blog/static/css/main.aa1d861b.css.map",
+    "main.ffb372ab.js.map": "/mizzxi-blog/static/js/main.ffb372ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.513c0423.css",
-    "static/js/main.91869f8b.js"
+    "static/css/main.aa1d861b.css",
+    "static/js/main.ffb372ab.js"
   ]
 }
