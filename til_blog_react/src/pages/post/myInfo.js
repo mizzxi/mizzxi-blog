@@ -59,10 +59,6 @@ export default function MyInfo() {
     }
   };
 
-  const [project, setProject] = useState("project");
-
-  const projectClick = () => {};
-
   return (
     /* jshint ignore:start */
     <>
@@ -212,29 +208,51 @@ export default function MyInfo() {
           <div className="projectCover" />
           <h1 className={projectTitle}>Projects</h1>
           <div className="projectMain">
-            <a className="project1" onClick={projectClick}>
+            <div className="project1">
               <div className="project">
                 <img src={PROJECT1} />
                 <div id="projectText">
-                  {/* <h4>여성 의류 쇼핑몰 전략 대시보드 제작</h4>
+                  <p>여성 의류 쇼핑몰 전략 대시보드 제작</p>
                   <p>
                     여성 의류 쇼핑몰 달리호텔의 제품, 고객, 매출 등의 데이터를
                     수집 가공하여 판매성과 및 추세를 파악할 수 있는 대시보드
                     제작 프로젝트
-                  </p> */}
+                  </p>
+                  <p>2022.07.01 ~ 2023.02.28</p>
+                  <a href="project-dali">클릭하여 게시물로 이동</a>
                 </div>
               </div>
-            </a>
-            <a className="project2" href="/">
+            </div>
+            <div className="project2">
               <div className="project">
                 <img src={PROJECT2} />
+                <div id="projectText">
+                  <p>여성 의류 쇼핑몰 전략 대시보드 제작</p>
+                  <p>
+                    여성 의류 쇼핑몰 달리호텔의 제품, 고객, 매출 등의 데이터를
+                    수집 가공하여 판매성과 및 추세를 파악할 수 있는 대시보드
+                    제작 프로젝트
+                  </p>
+                  <p>2022.07.01 ~ 2023.02.28</p>
+                  <a>클릭하여 게시물로 이동</a>
+                </div>
               </div>
-            </a>
-            <a className="project3" href="/">
+            </div>
+            <div className="project3">
               <div className="project">
                 <img src={PROJECT1} />
+                <div id="projectText">
+                  <p>여성 의류 쇼핑몰 전략 대시보드 제작</p>
+                  <p>
+                    여성 의류 쇼핑몰 달리호텔의 제품, 고객, 매출 등의 데이터를
+                    수집 가공하여 판매성과 및 추세를 파악할 수 있는 대시보드
+                    제작 프로젝트
+                  </p>
+                  <p>2022.07.01 ~ 2023.02.28</p>
+                  <a>클릭하여 게시물로 이동</a>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="contact"></div>
         </div>
