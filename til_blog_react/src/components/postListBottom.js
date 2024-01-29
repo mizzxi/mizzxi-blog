@@ -3,7 +3,7 @@ import "../assets/css/postListBottom.css";
 import data from "../assets/post/post.json";
 
 export default function PostListBottom({ title }) {
-  let { mainTitle, subTitle, date, img } = data[title];
+  let { mainTitle, subTitle, date, img, link } = data[title];
 
   useEffect(() => {
     mainTitle.forEach((text, i) => {
@@ -19,6 +19,7 @@ export default function PostListBottom({ title }) {
       postListSubTitle.innerHTML = subTitle[i];
       postListDate.innerHTML = date[i];
       postListImg.src = img[i];
+      postList.href = link[i];
 
       postListHorizontal.className = "listHorizontal";
       postListTitle.className = "postListTitleBottom";

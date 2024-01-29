@@ -67,7 +67,7 @@ export default function Main() {
                   <p>
                     <span className="mainTopTitle">기타</span>
                     <br />
-                    <span className="mainTopText">일상</span>
+                    <span className="mainTopText">테스트 중</span>
                   </p>
                 </span>
               </a>

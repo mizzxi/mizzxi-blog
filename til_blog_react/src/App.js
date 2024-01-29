@@ -8,6 +8,7 @@ import PostList from "./pages/postList";
 import TilExplain from "./pages/post/tilExplain";
 import MyInfo from "./pages/post/myInfo";
 import Dali from "./pages/post/projects/project-dali";
+import Graph from "./pages/post/projects/project-graph";
 import ReactGA from "react-ga";
 import { createBrowserHistory } from "history";
 
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/tilExplain" element={<TilExplain />} />
           <Route path="/myInfo" element={<MyInfo />} />
           <Route path="/project-dali" element={<Dali />} />
+          <Route path="/project-graph" element={<Graph />} />
         </Routes>
         <FOOTER />
       </BrowserRouter>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../assets/css/info.css";
 import PROFILEPHOTO from "../../assets/images/study/profilePhoto.jpg";
 import PROJECT1 from "../../assets/images/study/main_dali.jpg";
-import PROJECT2 from "../../assets/images/study/main_graph.jpg";
+import PROJECT2 from "../../assets/images/study/project_graph_dbpia.jpg";
 import {
   Aws,
   Bigquery,
@@ -227,14 +227,14 @@ export default function MyInfo() {
               <div className="project">
                 <img src={PROJECT2} />
                 <div id="projectText">
-                  <p>여성 의류 쇼핑몰 전략 대시보드 제작</p>
+                  <p>막대그래프 왜곡 탐지 및 교정 시스템 개발과 논문 작성</p>
                   <p>
-                    여성 의류 쇼핑몰 달리호텔의 제품, 고객, 매출 등의 데이터를
-                    수집 가공하여 판매성과 및 추세를 파악할 수 있는 대시보드
-                    제작 프로젝트
+                    웹페이지 상의 그래프 수집, 그래프 분류, 그래프 상의 데이터
+                    추정, 정확한 그래프 생성의 기능으로 구성된 크롬 확장
+                    프로그램을 개발과 연구 논문 작성
                   </p>
                   <p>2022.07.01 ~ 2023.02.28</p>
-                  <a>클릭하여 게시물로 이동</a>
+                  <a href="project-graph">클릭하여 게시물로 이동</a>
                 </div>
               </div>
             </div>

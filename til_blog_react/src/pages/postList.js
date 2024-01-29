@@ -7,7 +7,7 @@ export default function PostList() {
   const location = useLocation();
   const title = location.state.title;
 
-  let { mainTitle, subTitle, date } = data[title];
+  let { mainTitle, subTitle, date, link } = data[title];
 
   useEffect(() => {
     let clean = document.getElementById("postListMain");
@@ -24,6 +24,7 @@ export default function PostList() {
       postListTitle.innerHTML = text;
       postListSubTitle.innerHTML = subTitle[i];
       postListDate.innerHTML = date[i];
+      postList.href = link[i];
 
       postList.className = "postListBox";
       postListTitle.className = "postListTitle";

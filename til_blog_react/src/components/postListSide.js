@@ -3,7 +3,7 @@ import "../assets/css/postListSide.css";
 import data from "../assets/post/post.json";
 
 export default function PostListSide({ title }) {
-  let { mainTitle, subTitle, date } = data[title];
+  let { mainTitle, subTitle, date, link } = data[title];
 
   useEffect(() => {
     mainTitle.forEach((text, i) => {
@@ -15,6 +15,7 @@ export default function PostListSide({ title }) {
       postListTitle.innerHTML = text;
       postListSubTitle.innerHTML = subTitle[i];
       postListDate.innerHTML = date[i];
+      postList.href = link[i];
 
       postList.className = "postListBoxSide";
       postListTitle.className = "postListTitleSide highlight";
