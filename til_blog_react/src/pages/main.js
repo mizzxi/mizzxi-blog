@@ -76,7 +76,7 @@ export default function Main() {
         </div>
         <div className={sliderMove} id="slider">
           <div id="sliderImg1">
-            <a>
+            <a href="tilExplain">
               <span className="sliderTitle">TIL? Today I Learned</span>
               <button className="sliderButton" type="button">
                 더보기

@@ -1,32 +1,57 @@
 {
   "all": {
-    "mainTitle": ["What is a TIL blog?", "Graph Dentistry", "졸업작품"],
+    "mainTitle": [
+      "What is a TIL blog?",
+      "TIL Test",
+      "Graph Dentistry",
+      "졸업작품",
+      "선거 전략 대시보드"
+    ],
     "subTitle": [
       "mizzxi의 TIL 블로그",
+      "몰입의 매력: 플로우 상태에서 찾는 창의성과 성취",
       "막대그래프 왜곡 탐지 및 교정 시스템 개발과 논문 작성",
-      "여성 의류 쇼핑몰 전략 대시보드 제작"
+      "여성 의류 쇼핑몰 전략 대시보드 제작",
+      "2022 대선 데이터를 활용한 분석 대시보드"
     ],
-    "date": ["2024.01.01", "2024.01.28", "2024.01.20"],
-    "link": ["tilExplain", "project-graph", "project-dali"]
+    "date": [
+      "2024.01.01",
+      "2024.01.30",
+      "2024.01.28",
+      "2024.01.20",
+      "2024.01.30"
+    ],
+    "link": [
+      "tilExplain",
+      "tilTest",
+      "project-graph",
+      "project-dali",
+      "project-vote"
+    ]
   },
 
   "til": {
-    "mainTitle": ["What is a TIL blog?"],
-    "subTitle": ["mizzxi의 TIL 블로그"],
-    "date": ["2024.01.01"],
-    "link": ["tilExplain"]
+    "mainTitle": ["What is a TIL blog?", "TIL Test"],
+    "subTitle": [
+      "mizzxi의 TIL 블로그",
+      "몰입의 매력: 플로우 상태에서 찾는 창의성과 성취"
+    ],
+    "date": ["2024.01.01", "2024.01.30"],
+    "link": ["tilExplain", "tilTest"]
   },
   "project": {
-    "mainTitle": ["Graph Dentistry", "졸업작품"],
+    "mainTitle": ["Graph Dentistry", "졸업작품", "선거 전략 대시보드"],
     "subTitle": [
       "막대그래프 왜곡 탐지 및 교정 시스템 개발과 논문 작성",
-      "여성 의류 쇼핑몰 전략 대시보드 제작"
+      "여성 의류 쇼핑몰 전략 대시보드 제작",
+      "2022 대선 데이터를 활용한 분석 대시보드"
     ],
-    "date": ["2024.01.28", "2024.01.20"],
+    "date": ["2024.01.28", "2024.01.20", "2024.01.30"],
     "img": [
       "https://cdn.discordapp.com/attachments/1198903037419331616/1198903201869602856/main_graph.jpg?ex=65c0989d&is=65ae239d&hm=934d1dc5367c7d63352cd0169579cdf78d3a82539fea98cf6879f4fd119f2802&",
-      "https://cdn.discordapp.com/attachments/1198903037419331616/1198903201282392096/main_dali2.jpg?ex=65c0989d&is=65ae239d&hm=3c891f5c48f76a6f212456ae3973496b80ef149b3a8699f15ee68167a695d709&"
+      "https://cdn.discordapp.com/attachments/1198903037419331616/1198903201282392096/main_dali2.jpg?ex=65c0989d&is=65ae239d&hm=3c891f5c48f76a6f212456ae3973496b80ef149b3a8699f15ee68167a695d709&",
+      "https://cdn.discordapp.com/attachments/1198903037419331616/1201466975113728010/project_vote_result.JPG?ex=65c9ec51&is=65b77751&hm=f338b915bea14bd9543b1b6dd525034184ccf8410def897467c6049a15d35ae0&"
     ],
-    "link": ["project-graph", "project-dali"]
+    "link": ["project-graph", "project-dali", "project-vote"]
   }
 }

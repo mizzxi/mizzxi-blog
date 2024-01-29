@@ -3,6 +3,7 @@ import "../../assets/css/info.css";
 import PROFILEPHOTO from "../../assets/images/study/profilePhoto.jpg";
 import PROJECT1 from "../../assets/images/study/main_dali.jpg";
 import PROJECT2 from "../../assets/images/study/project_graph_dbpia.jpg";
+import PROJECT3 from "../../assets/images/study/project_vote_result.jpg";
 import {
   Aws,
   Bigquery,
@@ -43,7 +44,7 @@ export default function MyInfo() {
     } else if (window.scrollY >= 3 && window.scrollY < 600) {
       setSkillTitle("hidden");
       setProfileTitle("slide-in-right");
-    } else if (window.scrollY >= 500 && window.scrollY < 1000) {
+    } else if (window.scrollY >= 400 && window.scrollY < 1000) {
       setSkillLineTop("scale-up-ver-top");
     } else if (window.scrollY >= 1050 && window.scrollY < 1900) {
       setProfileTitle("hidden");
@@ -233,28 +234,31 @@ export default function MyInfo() {
                     추정, 정확한 그래프 생성의 기능으로 구성된 크롬 확장
                     프로그램을 개발과 연구 논문 작성
                   </p>
-                  <p>2022.07.01 ~ 2023.02.28</p>
+                  <p>2022.12.10 ~ 2022.09.05</p>
                   <a href="project-graph">클릭하여 게시물로 이동</a>
                 </div>
               </div>
             </div>
             <div className="project3">
               <div className="project">
-                <img src={PROJECT1} />
+                <img src={PROJECT3} />
                 <div id="projectText">
-                  <p>여성 의류 쇼핑몰 전략 대시보드 제작</p>
+                  <p>대선 데이터 기반 분석 대시보드</p>
                   <p>
-                    여성 의류 쇼핑몰 달리호텔의 제품, 고객, 매출 등의 데이터를
-                    수집 가공하여 판매성과 및 추세를 파악할 수 있는 대시보드
-                    제작 프로젝트
+                    2022 대선 데이터를 기반으로 다음 대선 입후보자들을 타깃으로
+                    한 선거 전략 대시보드 제작
                   </p>
-                  <p>2022.07.01 ~ 2023.02.28</p>
-                  <a>클릭하여 게시물로 이동</a>
+                  <p>2022.05.01 ~ 2022.06.01</p>
+                  <a href="project-vote">클릭하여 게시물로 이동</a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="contact"></div>
+          <div className="contact">
+            <a href="mailto:3093977@naver.com">&#128386; 3093977@naver.com</a>
+
+            <p>카카오톡 ID: mizzxi</p>
+          </div>
         </div>
       </div>
     </>
