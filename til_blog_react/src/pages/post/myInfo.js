@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../../assets/css/info.css";
 import PROFILEPHOTO from "../../assets/images/study/profilePhoto.jpg";
 import PROJECT1 from "../../assets/images/study/main_dali.jpg";
-import PROJECT2 from "../../assets/images/study/project_graph_dbpia.jpg";
-import PROJECT3 from "../../assets/images/study/project_vote_result.jpg";
+import PROJECT2 from "../../assets/images/study/project/project_graph_dbpia.jpg";
+import PROJECT3 from "../../assets/images/study/project/project_vote_result.jpg";
 import {
   Aws,
   Bigquery,

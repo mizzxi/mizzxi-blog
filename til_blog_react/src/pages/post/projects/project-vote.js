@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../../assets/css/post.css";
-import Demo from "../../../assets/images/study/project_vote_result.jpg";
-import Ex from "../../../assets/images/study/project_vote_ex.gif";
+import Demo from "../../../assets/images/study/project/project_vote_result.jpg";
+import Ex from "../../../assets/images/study/project/project_vote_ex.gif";
 import ProjectListBottom from "../../../components/postListBottom";
 
 export default function Vote() {

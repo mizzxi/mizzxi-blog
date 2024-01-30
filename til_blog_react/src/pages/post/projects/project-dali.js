@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../../assets/css/post.css";
 import Poster from "../../../assets/images/study/main_dali2.jpg";
 import Dali_dashboard from "../../../assets/images/study/main_dali.jpg";
-import Structure from "../../../assets/images/study/project_dali_structure.jpg";
+import Structure from "../../../assets/images/study/project/project_dali_structure.jpg";
 import ProjectListBottom from "../../../components/postListBottom";
 
 export default function Dali() {

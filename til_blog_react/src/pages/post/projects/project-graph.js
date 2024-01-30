@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "../../../assets/css/post.css";
 import Demo from "../../../assets/images/study/main_graph.jpg";
-import Chrome from "../../../assets/images/study/project_graph_chrome.jpg";
-import Ex from "../../../assets/images/study/project_graph_ex.jpg";
-import Popup from "../../../assets/images/study/project_graph_popup.jpg";
-import DB from "../../../assets/images/study/project_graph_dbpia.jpg";
-import Structure from "../../../assets/images/study/project_graph_structure.jpg";
+import Chrome from "../../../assets/images/study/project/project_graph_chrome.jpg";
+import Ex from "../../../assets/images/study/project/project_graph_ex.jpg";
+import Popup from "../../../assets/images/study/project/project_graph_popup.jpg";
+import DB from "../../../assets/images/study/project/project_graph_dbpia.jpg";
+import Structure from "../../../assets/images/study/project/project_graph_structure.jpg";
 import ProjectListBottom from "../../../components/postListBottom";
 
 export default function Graph() {
