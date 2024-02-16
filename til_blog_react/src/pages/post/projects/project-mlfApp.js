@@ -22,8 +22,7 @@ export default function MlfApp() {
           <img src="https://img.appstory.co.kr/@files/monthly.appstory.co.kr/thum/Bdatafile/Board/dir_147/14775.jpg?v=1627516728" />
           육성 게임은 플레이어가 가상 세계에서 캐릭터, 동물, 농장 등을 키우고
           발전시키는 게임으로, 주로 시간과 노력을 투자하여 리소스를 모으고
-          발전시키는 측면에서 중요한 역할을 합니다. 이러한 게임들은 다양한
-          플랫폼에서 제공되며, 주로 모바일 기기에서 플레이되는 경우가
+          발전시키는 측면에서 중요한 역할을 합니다.
           <img src="https://cdn.inflearn.com/wp-content/uploads/androidstudio.png" />
           My Little Friend는 안드로이드 스튜디오를 사용하여 개발된 안드로이드 앱
           프로젝트이며, 어플을 통해 플레이어는 게임 속 가상 친구와 대화를 하고
@@ -54,10 +53,10 @@ export default function MlfApp() {
             <h2>&#128677; 결과물</h2>
             <br />
             <a
-              href="https://github.com/mizzxi/MyLittleFriend.git"
+              href="https://drive.google.com/file/d/1eLuSecQEQef5wVkS3E8sImiIcrAOO6p6/view"
               target="blank"
             >
-              &#128073;[Github repository]&#128072;
+              &#128073;[앱 다운로드 파일]&#128072;
             </a>
             <img src={Result} />
           </p>

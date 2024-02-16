@@ -6,12 +6,13 @@ import FOOTER from "./components/Footer/footer";
 import "./App.css";
 import PostList from "./pages/postList";
 import TilExplain from "./pages/post/tilExplain";
-import TilTest from "./pages/post/Til/tilTest";
+import TilTest from "./pages/post/Tils/tilTest";
 import MyInfo from "./pages/post/myInfo";
-import Dali from "./pages/post/projects/project-dali";
-import Graph from "./pages/post/projects/project-graph";
-import Vote from "./pages/post/projects/project-vote";
-import MlfApp from "./pages/post/projects/project-mlfApp";
+import Dali from "./pages/post/Projects/project-dali";
+import Graph from "./pages/post/Projects/project-graph";
+import Vote from "./pages/post/Projects/project-vote";
+import MlfApp from "./pages/post/Projects/project-mlfApp";
+import SubwayGame from "./pages/post/Projects/project-subwaygame";
 import ReactGA from "react-ga";
 import { createBrowserHistory } from "history";
 
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/project-graph" element={<Graph />} />
           <Route path="/project-vote" element={<Vote />} />
           <Route path="/project-mlfApp" element={<MlfApp />} />
+          <Route path="/project-subwayGame" element={<SubwayGame />} />
           <Route path="/tilTest" element={<TilTest />} />
         </Routes>
         <FOOTER />

@@ -6,7 +6,8 @@
       "Graph Dentistry",
       "졸업작품",
       "선거 전략 대시보드",
-      "My Little Friend"
+      "My Little Friend",
+      "SubwayGame"
     ],
     "subTitle": [
       "mizzxi의 TIL 블로그",
@@ -14,7 +15,8 @@
       "막대그래프 왜곡 탐지 및 교정 시스템 개발과 논문 작성",
       "여성 의류 쇼핑몰 전략 대시보드 제작",
       "2022 대선 데이터를 활용한 분석 대시보드",
-      "안드로이드 앱으로 즐기는 간단한 육성 게임"
+      "안드로이드 앱으로 즐기는 간단한 육성 게임",
+      "친구들과 함께하는 지하철 1호선 역이름 말하기 게임"
     ],
     "date": [
       "2024.01.01",
@@ -22,7 +24,8 @@
       "2024.01.28",
       "2024.01.20",
       "2024.01.30",
-      "2024.02.01"
+      "2024.02.01",
+      "2024.02.16"
     ],
     "link": [
       "tilExplain",
@@ -30,7 +33,8 @@
       "project-graph",
       "project-dali",
       "project-vote",
-      "project-mlfApp"
+      "project-mlfApp",
+      "project-subwayGame"
     ]
   },
 
@@ -48,21 +52,36 @@
       "Graph Dentistry",
       "졸업작품",
       "선거 전략 대시보드",
-      "My Little Friend"
+      "My Little Friend",
+      "SubwayGame"
     ],
     "subTitle": [
       "막대그래프 왜곡 탐지 및 교정 시스템 개발과 논문 작성",
       "여성 의류 쇼핑몰 전략 대시보드 제작",
       "2022 대선 데이터를 활용한 분석 대시보드",
-      "안드로이드 앱으로 즐기는 간단한 육성 게임"
+      "안드로이드 앱으로 즐기는 간단한 육성 게임",
+      "친구들과 함께하는 지하철 1호선 역이름 말하기 게임"
     ],
-    "date": ["2024.01.28", "2024.01.20", "2024.01.30", "2024.02.01"],
+    "date": [
+      "2024.01.28",
+      "2024.01.20",
+      "2024.01.30",
+      "2024.02.01",
+      "2024.02.16"
+    ],
     "img": [
       "https://cdn.discordapp.com/attachments/1198903037419331616/1198903201869602856/main_graph.jpg?ex=65c0989d&is=65ae239d&hm=934d1dc5367c7d63352cd0169579cdf78d3a82539fea98cf6879f4fd119f2802&",
       "https://cdn.discordapp.com/attachments/1198903037419331616/1198903201282392096/main_dali2.jpg?ex=65c0989d&is=65ae239d&hm=3c891f5c48f76a6f212456ae3973496b80ef149b3a8699f15ee68167a695d709&",
       "https://cdn.discordapp.com/attachments/1198903037419331616/1201466975113728010/project_vote_result.JPG?ex=65c9ec51&is=65b77751&hm=f338b915bea14bd9543b1b6dd525034184ccf8410def897467c6049a15d35ae0&",
-      "https://cdn.discordapp.com/attachments/1198903037419331616/1201858671932608512/project_mlf_result.jpg?ex=65cb591c&is=65b8e41c&hm=5643fd86f8829c47939dfd028062015b3bf7279515af97cef1f967363185bd7a&"
+      "https://cdn.discordapp.com/attachments/1198903037419331616/1201858671932608512/project_mlf_result.jpg?ex=65cb591c&is=65b8e41c&hm=5643fd86f8829c47939dfd028062015b3bf7279515af97cef1f967363185bd7a&",
+      "https://cdn.discordapp.com/attachments/1198903037419331616/1201858672364363826/project_subway_game.jpg?ex=65ddce1c&is=65cb591c&hm=db65d1511868c48c462b5270e05fa70c09ef6587bd66cb420ca58db24de6acd9&"
     ],
-    "link": ["project-graph", "project-dali", "project-vote", "project-mlfApp"]
+    "link": [
+      "project-graph",
+      "project-dali",
+      "project-vote",
+      "project-mlfApp",
+      "project-subwayGame"
+    ]
   }
 }
