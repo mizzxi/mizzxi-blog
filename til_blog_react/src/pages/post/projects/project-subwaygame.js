@@ -43,12 +43,12 @@ export default function SubwayGame() {
             있는 권한이 생깁니다.
             <br />
             <br />
+            ++ aws의 ec2를 사용하여 배포
+            <br />
+            <br />
             <h2>&#128677; 결과물</h2>
             <br />
-            <a
-              href="https://port-0-subway-game-17xco2nlsh8my76.sel5.cloudtype.app/"
-              target="blank"
-            >
+            <a href="https://subwaygame.mizzxi.site/" target="blank">
               &#128073;[게임하러 가기]&#128072;
             </a>
             <img src={Main} />
@@ -69,6 +69,9 @@ export default function SubwayGame() {
             </li>
             <li>
               <a>#지하철</a>
+            </li>
+            <li>
+              <a>#AWS</a>
             </li>
           </ul>
         </div>
