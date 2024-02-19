@@ -1,13 +1,53 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../../assets/css/post.css";
 import Demo from "../../../assets/images/study/project/project_vote_result.jpg";
 import Ex from "../../../assets/images/study/project/project_vote_ex.gif";
 import ProjectListBottom from "../../../components/postListBottom";
 
 export default function Vote() {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const bodyHeight = document.body.clientHeight;
+
+      const maxScroll = bodyHeight - windowHeight;
+      const percentage = (scrollPosition / maxScroll) * 100;
+
+      setProgress(percentage);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     /* jshint ignore:start */
     <>
+      <div
+        className="progress"
+        role="progressbar"
+        style={{
+          backgroundColor: "#ffff",
+        }}
+      >
+        <div
+          className="progress-bar barStyle"
+          style={{
+            width: progress + "%",
+            backgroundColor: "black",
+            position: "fixed",
+            height: 3 + "px",
+            zIndex: 2,
+            margin: 8 + "px",
+            borderRadius: 100 + "px",
+          }}
+        ></div>
+      </div>
       <div className="projectPost">
         <div>
           <a>프로젝트</a>
@@ -43,7 +83,7 @@ export default function Vote() {
             <br />
             <h2>&#128677; 결과</h2>
             <br />
-            <a href="https://w6grf2.csb.app/" target="blank">
+            <a href="https://voteboard.netlify.app" target="blank">
               &#128073;[사이트로 이동]&#128072;
             </a>
             <img src={Demo} />
