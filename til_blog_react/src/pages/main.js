@@ -118,7 +118,7 @@ export default function Main() {
           <div className="cardBox">
             <div>
               현재 가장 공부하기 어려운 분야는 컴퓨터 네트워크 <br />
-              애매하게 알고 있어서 더 복잡한 상태 ㅜ.ㅜ <br />
+              애매하게 알고 있어서 더 복잡한 상태이므로 <br />
               언제 한번 교보문구 가서 책을 구입해 봐야겠다
             </div>
           </div>
