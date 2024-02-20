@@ -29,6 +29,10 @@
   float: right;
   margin-left: 50px;
 }
+.miniImg {
+  width: 50% !important;
+  margin: 20px;
+}
 
 .postText,
 .projectPost img {
@@ -67,4 +71,15 @@
 }
 .postTag li:nth-child(even) {
   background-color: #f3eed1;
+}
+
+mark {
+  background-color: #d6f0f1;
+}
+mark.y {
+  background-color: #f8f8d9;
+}
+
+.textColor {
+  color: cadetblue;
 }

@@ -1,5 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ReactGA from "react-ga";
+import { createBrowserHistory } from "history";
+
+//content
 import HEADER from "./components/Header/header";
 import MAIN from "./pages/main";
 import FOOTER from "./components/Footer/footer";
@@ -8,13 +12,16 @@ import PostList from "./pages/postList";
 import TilExplain from "./pages/post/tilExplain";
 import TilTest from "./pages/post/Tils/tilTest";
 import MyInfo from "./pages/post/myInfo";
+
+//project post
 import Dali from "./pages/post/Projects/project-dali";
 import Graph from "./pages/post/Projects/project-graph";
 import Vote from "./pages/post/Projects/project-vote";
 import MlfApp from "./pages/post/Projects/project-mlfApp";
 import SubwayGame from "./pages/post/Projects/project-subwaygame";
-import ReactGA from "react-ga";
-import { createBrowserHistory } from "history";
+
+//til post
+import Til240220 from "./pages/post/Tils/til-240220";
 
 export default function App() {
   const history = createBrowserHistory();
@@ -42,6 +49,8 @@ export default function App() {
           <Route path="/project-mlfApp" element={<MlfApp />} />
           <Route path="/project-subwayGame" element={<SubwayGame />} />
           <Route path="/tilTest" element={<TilTest />} />
+
+          <Route path="/til-240220" element={<Til240220 />} />
         </Routes>
         <FOOTER />
       </BrowserRouter>

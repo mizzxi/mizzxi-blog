@@ -1,0 +1,165 @@
+import React, { useState } from "react";
+import "../../../assets/css/post.css";
+import PostListSide from "../../../components/postListSide";
+
+export default function Til240220() {
+  return (
+    /* jshint ignore:start */
+    <>
+      <div className="post">
+        <div>
+          <a>TIL</a>
+          <h1>컴퓨터 구조와 운영체제</h1>
+          <h4>#1 컴퓨터 구조</h4>
+          <p>mizzxi | 2024.02.20 17:08</p>
+          <hr />
+          <p className="postText">
+            <h4>🔎컴퓨터 구조</h4>
+            컴퓨터 관련 전공이지만 소프트웨어에 비해 하드웨어에 대한 이해가
+            부족하다는 것을 너무 느껴서 "혼자 공부하는 컴퓨터 구조 운영체제"
+            책으로 간단하게 이해해보려 한다.
+            <br />
+            물론 소프트웨어에 대한 이해도 한참 부족하지만.. <br />
+            대충 훑어봤을 때 비전공자가 읽기에 굉장히 쉽게 설명되어 있었고
+            용어들도 풀어서 설명해주어 좋았다. 이 책으로 먼저 간단히 이해하고,
+            이후 다른 책도 읽어 볼 예정이다.
+            <br />
+            <br /> ◼ 컴퓨터가 이해하는 정보: 데이터, 명령어 <br />
+            <mark className="y">
+              네 가지 핵심 부품: CPU(중앙처리장치), 메모리(주기억장치, RAM과
+              ROM), 보조기억장치, 입출력장치
+            </mark>
+            <br />
+            <img src="https://hongong.hanbit.co.kr/wp-content/uploads/2022/09/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0_%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9E%A5%EC%B9%98.png" />
+            <br />
+            <br />
+            <h5>
+              <mark>1. 메모리</mark>
+            </h5>
+            현재 실행되는 프로그램의 명령어와 데이터를 저장하는 부품 =
+            프로그램이 실행되기 위해선 메모리에 저장되어 있어야 함 메모리의 빠른
+            동작을 위해선 저장된 명령어와 데이터 위치가 정돈되어 있어야 함 즉,
+            주소가 사용됨
+            <br />
+            <img
+              className="miniImg"
+              src="https://i.namu.wiki/i/nPUleIE2l-p9-Hih6FuYtvljs4EqS46incBV9PQRXeqCip47_5W4VSuJu-mfWGKHjWzSFjSRofLkXm44vd2xmw.webp"
+            />
+            <br />
+            <h5>
+              <mark>2. CPU</mark>
+            </h5>
+            메모리에 저장된 명령어를 읽고, 해석 실행하는 부품
+            <br />
+            산술논리연산장치 ALU: 계산기 <br />
+            레지스터: 임시 저장 장치, 계산 값들 저장, 여러개 <br />
+            제어장치: 컴퓨터 제어신호를 내보내는 명령어 해석 장치
+            <br />
+            <img
+              className="miniImg"
+              src="https://t1.daumcdn.net/cfile/tistory/99FEA1365CF1670F01"
+            />
+            <br />
+            <h5>
+              <mark>3. 보조기억장치</mark>
+            </h5>
+            메모리는 적은 용량 and 비싼 가격 and 전원에 영향받는 단기기억이기
+            때문에 사용되는 저장 장치 <br />
+            예) 하드 디스크, SSD, USB 등<br />
+            <img
+              className="miniImg"
+              src="https://mblogthumb-phinf.pstatic.net/MjAxODA4MjNfMTg3/MDAxNTM0OTg4MTYyMjI1.8TfR4prcSN6MUMPfZmOrQxBBkY9KZ0uclrrxGWrcQg4g.ahFbWFwMrIKuNWgP79rjBCOPZKaEWM6xBbdqYkrjmnsg.PNG.dellose/hdd_vs_ssd_bz.png?type=w800"
+            />
+            <br />
+            <h5>
+              <mark>4. 입출력장치</mark>
+            </h5>
+            컴퓨터 외부와 연결된 데이터 교환 장치 <br />
+            예) 마우스, 키보드, 모니터 등<br />
+            <img
+              className="miniImg"
+              src="https://thebook.io/img/007026/065.jpg"
+            />
+            <br />⇒ 위 네 가지 핵심 부품은 메인보드라는 판에 연결됨
+            <br />
+            메인보드(=마더보드): 부품들의 정보는 내부 버스라는 통로로 자유롭게
+            이동함
+            <br />- 시스템 버스: 주소 버스, 데이터 버스, 제어 버스 <br />
+            <br />| 바이트 byte → 8 bit <br />| 킬로바이트 kb → 1000 byte
+            <br />| 메가바이트 mb → 1000 kb <br />| 기가바이트 gb → 1000 mb
+            <br />| 테라바이트 tb → 1000 gb <br />
+            <br />
+            <mark className="y">
+              워드: CPU가 한번에 처리할 수 있는 데이터 크기, 클 수록 성능 업
+            </mark>
+            <br />
+            <br />
+            <br />
+            <h5>◼ 문자</h5>문자 집합: 컴퓨터가 인식, 표현할 수 있는 모음 문자
+            <br />
+            인코딩: 집합 내 문자를 0과 1로 표현 문자 <br />
+            디코딩: 0과 1의 문자를 기존 문자로 변환하는 과정 <br />
+            <br />
+            아스키 코드: 8bit(=1byte), 1bit는 오류검출에 사용되므로 실질적으로
+            7bit <br />
+            한글 인코딩 방식으로는 EUC-KR <br />
+            유니코드: EUC-KR보다 훨씬 다양한 한글을 포함, 특수문자 포함 <br />
+            UTF-8: 인코딩 방식, 1~4 바이트까지의 인코딩 결과를 만들어 냄<br />
+            <br />
+            <h5>◼ 언어</h5>
+            고급언어: 사람의 언어, 소스코드 <br />
+            저급언어: 명령어로 이루어진 언어 <br />- 기계어: 2진법, 16진법
+            <br />- 어셈블리어: 기계어를 읽기 편한 형태로 번역한 언어 <br />
+            ex) push, mov, add … <br />
+            <br />- 언어의 변환 <br />
+            컴파일 언어: 컴파일러에 의해 소스 코드 전체가 저급 언어로 변환,
+            c언어, 변환된 언어는 목적 코드라고 함 <br />
+            인터프리터 언어: 인터프리터에 의해 소스 코드가 한 줄씩 실행, python
+            <br />
+            <mark className="y">→ 속도는 컴파일 언어가 더 빠름</mark>
+            <br />
+            <br />
+            <h5>◼ 파일</h5>
+            목적파일: 목적 코드로 이루어진 파일, exe 파일, 실행 시 링킹작업 거침
+            <br />
+            실행파일: 링킹 작업이 끝난 실행 파일 <br />
+            <br />
+            <h5>◼ 명령어의 구조 </h5>
+            연산 코드: 명령어가 수행할 연산 <br />
+            오퍼랜드: 연산되는 데이터가 저장된 주소(=주소 필드) <br />
+            <mark className="y">
+              → 오퍼랜드 필드에 데이터 위치를 찾는 방법을 주소 지정 방식이라 함
+            </mark>
+            <br />
+            즉시 주소 지정 방식: 데이터를 바로 명시 <br />
+            직접 주소 지정 방식: 유효 주소를 명시 <br />
+            간접 주소 지정 방식: 유효 주소의 주소를 명시 <br />
+            레지스터 주소 지정 방식: CPU 내부 레지스터 주소를 명시, CPU접근이 좀
+            더 빠르지만 크기 제한 존재 <br />
+            레지스터 간접 주소 지정 방식: 유효주소의 레지스터 주소를 명시 <br />
+            <br />
+            <img src="https://hongong.hanbit.co.kr/wp-content/uploads/2022/09/%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B6%80%ED%92%88.png" />
+          </p>
+        </div>
+        <hr />
+        <div className="postTag">
+          <h6>&#128204;태그</h6>
+          <ul>
+            <li>
+              <a>#TIL</a>
+            </li>
+            <li>
+              <a>#Blog</a>
+            </li>
+            <li>
+              <a>#공부</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="comment"></div>
+      <PostListSide title="til" />
+    </>
+    /* jshint ignore:end */
+  );
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
+//skills
 export const Aws = require("./assets/images/ico/skills/aws.png");
 export const Bigquery = require("./assets/images/ico/skills/bigquery.png");
 export const Chrome = require("./assets/images/ico/skills/chrome.png");
