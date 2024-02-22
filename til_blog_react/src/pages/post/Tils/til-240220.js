@@ -1,11 +1,50 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../../assets/css/post.css";
 import PostListSide from "../../../components/postListSide";
 
 export default function Til240220() {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const bodyHeight = document.getElementById("post").clientHeight;
+
+      const maxScroll = bodyHeight - windowHeight;
+      const percentage = (scrollPosition / maxScroll) * 100;
+
+      setProgress(percentage);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     /* jshint ignore:start */
     <>
+      <div
+        className="progress"
+        role="progressbar"
+        style={{
+          backgroundColor: "#ffff",
+        }}
+      >
+        <div
+          className="progress-bar barStyle"
+          style={{
+            width: progress + "%",
+            backgroundColor: "black",
+            position: "fixed",
+            height: 3 + "px",
+            zIndex: 2,
+            margin: 8 + "px",
+            borderRadius: 100 + "px",
+          }}
+        ></div>
+      </div>
       <div className="post">
         <div>
           <a>TIL</a>
@@ -21,15 +60,15 @@ export default function Til240220() {
             <br />
             물론 소프트웨어에 대한 이해도 한참 부족하지만.. <br />
             대충 훑어봤을 때 비전공자가 읽기에 굉장히 쉽게 설명되어 있었고
-            용어들도 풀어서 설명해주어 좋았다. 이 책으로 먼저 간단히 이해하고,
-            이후 다른 책도 읽어 볼 예정이다.
+            용어들도 풀어서 설명해주어 좋았다. <br />이 책으로 먼저 간단히
+            이해하고, 이후 다른 책도 읽어 볼 예정이다.
             <br />
             <br /> ◼ 컴퓨터가 이해하는 정보: 데이터, 명령어 <br />
             <mark className="y">
               네 가지 핵심 부품: CPU(중앙처리장치), 메모리(주기억장치, RAM과
               ROM), 보조기억장치, 입출력장치
             </mark>
-            <br />
+            <br /> <br /> ◼ 부품 <br />
             <img src="https://hongong.hanbit.co.kr/wp-content/uploads/2022/09/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B5%AC%EC%A1%B0_%EC%9E%85%EC%B6%9C%EB%A0%A5%EC%9E%A5%EC%B9%98.png" />
             <br />
             <br />
@@ -37,9 +76,9 @@ export default function Til240220() {
               <mark>1. 메모리</mark>
             </h5>
             현재 실행되는 프로그램의 명령어와 데이터를 저장하는 부품 =
-            프로그램이 실행되기 위해선 메모리에 저장되어 있어야 함 메모리의 빠른
-            동작을 위해선 저장된 명령어와 데이터 위치가 정돈되어 있어야 함 즉,
-            주소가 사용됨
+            프로그램이 실행되기 위해선 메모리에 저장되어 있어야 함, 메모리의
+            빠른 동작을 위해선 저장된 명령어와 데이터 위치가 정돈되어 있어야 함
+            즉, 주소가 사용됨
             <br />
             <img
               className="miniImg"
@@ -80,7 +119,10 @@ export default function Til240220() {
               className="miniImg"
               src="https://thebook.io/img/007026/065.jpg"
             />
-            <br />⇒ 위 네 가지 핵심 부품은 메인보드라는 판에 연결됨
+            <br />
+            <mark className="y">
+              ⇒ 위 네 가지 컴퓨터의 핵심 부품은 메인보드라는 판에 연결됨
+            </mark>
             <br />
             메인보드(=마더보드): 부품들의 정보는 내부 버스라는 통로로 자유롭게
             이동함
@@ -97,8 +139,8 @@ export default function Til240220() {
             <br />
             <h5>◼ 문자</h5>문자 집합: 컴퓨터가 인식, 표현할 수 있는 모음 문자
             <br />
-            인코딩: 집합 내 문자를 0과 1로 표현 문자 <br />
-            디코딩: 0과 1의 문자를 기존 문자로 변환하는 과정 <br />
+            &emsp; 인코딩: 집합 내 문자를 0과 1로 표현 문자 <br />
+            &emsp; 디코딩: 0과 1의 문자를 기존 문자로 변환하는 과정 <br />
             <br />
             아스키 코드: 8bit(=1byte), 1bit는 오류검출에 사용되므로 실질적으로
             7bit <br />
@@ -108,9 +150,11 @@ export default function Til240220() {
             <br />
             <h5>◼ 언어</h5>
             고급언어: 사람의 언어, 소스코드 <br />
-            저급언어: 명령어로 이루어진 언어 <br />- 기계어: 2진법, 16진법
-            <br />- 어셈블리어: 기계어를 읽기 편한 형태로 번역한 언어 <br />
-            ex) push, mov, add … <br />
+            저급언어: 명령어로 이루어진 언어 <br />
+            &emsp; - 기계어: 2진법, 16진법
+            <br />
+            &emsp; - 어셈블리어: 기계어를 읽기 편한 형태로 번역한 언어 <br />
+            &emsp; ex) push, mov, add … <br />
             <br />- 언어의 변환 <br />
             컴파일 언어: 컴파일러에 의해 소스 코드 전체가 저급 언어로 변환,
             c언어, 변환된 언어는 목적 코드라고 함 <br />
@@ -131,12 +175,13 @@ export default function Til240220() {
               → 오퍼랜드 필드에 데이터 위치를 찾는 방법을 주소 지정 방식이라 함
             </mark>
             <br />
-            즉시 주소 지정 방식: 데이터를 바로 명시 <br />
-            직접 주소 지정 방식: 유효 주소를 명시 <br />
-            간접 주소 지정 방식: 유효 주소의 주소를 명시 <br />
-            레지스터 주소 지정 방식: CPU 내부 레지스터 주소를 명시, CPU접근이 좀
-            더 빠르지만 크기 제한 존재 <br />
-            레지스터 간접 주소 지정 방식: 유효주소의 레지스터 주소를 명시 <br />
+            🔹 즉시 주소 지정 방식: 데이터를 바로 명시 <br />
+            🔹 직접 주소 지정 방식: 유효 주소를 명시 <br />
+            🔹 간접 주소 지정 방식: 유효 주소의 주소를 명시 <br />
+            🔹 레지스터 주소 지정 방식: CPU 내부 레지스터 주소를 명시, CPU접근이
+            좀 더 빠르지만 크기 제한 존재 <br />
+            🔹 레지스터 간접 주소 지정 방식: 유효주소의 레지스터 주소를 명시{" "}
+            <br />
             <br />
             <img src="https://hongong.hanbit.co.kr/wp-content/uploads/2022/09/%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B6%80%ED%92%88.png" />
           </p>
@@ -149,10 +194,10 @@ export default function Til240220() {
               <a>#TIL</a>
             </li>
             <li>
-              <a>#Blog</a>
+              <a>#컴퓨터구조</a>
             </li>
             <li>
-              <a>#공부</a>
+              <a>#운영체제</a>
             </li>
           </ul>
         </div>

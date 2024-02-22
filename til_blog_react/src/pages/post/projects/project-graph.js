@@ -6,7 +6,7 @@ import Ex from "../../../assets/images/study/project/project_graph_ex.jpg";
 import Popup from "../../../assets/images/study/project/project_graph_popup.jpg";
 import DB from "../../../assets/images/study/project/project_graph_dbpia.jpg";
 import Structure from "../../../assets/images/study/project/project_graph_structure.jpg";
-import ProjectListBottom from "../../../components/postListBottom";
+import PostListBottom from "../../../components/postListBottom";
 
 export default function Graph() {
   const [progress, setProgress] = useState(0);
@@ -134,7 +134,7 @@ export default function Graph() {
         </div>
       </div>
       <div className="comment"></div>
-      <ProjectListBottom title="project" />
+      <PostListBottom title="project" />
     </>
     /* jshint ignore:end */
   );

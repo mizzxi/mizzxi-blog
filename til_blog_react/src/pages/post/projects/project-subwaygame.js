@@ -3,7 +3,7 @@ import "../../../assets/css/post.css";
 import Main from "../../../assets/images/study/project/project_subway_opening.jpg";
 import Content from "../../../assets/images/study/project/project_subway_game.jpg";
 import Result from "../../../assets/images/study/project/project_subway_ending.jpg";
-import ProjectListBottom from "../../../components/postListBottom";
+import PostListBottom from "../../../components/postListBottom";
 
 export default function SubwayGame() {
   const [progress, setProgress] = useState(0);
@@ -117,7 +117,7 @@ export default function SubwayGame() {
         </div>
       </div>
       <div className="comment"></div>
-      <ProjectListBottom title="project" />
+      <PostListBottom title="project" />
     </>
     /* jshint ignore:end */
   );

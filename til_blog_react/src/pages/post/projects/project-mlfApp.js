@@ -5,7 +5,7 @@ import Content from "../../../assets/images/study/project/project_mlf_content.jp
 import Result from "../../../assets/images/study/project/project_mlf_result.jpg";
 import Chat from "../../../assets/images/study/project/project_mlf_chat.gif";
 import MiniGame from "../../../assets/images/study/project/project_mlf_minigame.gif";
-import ProjectListBottom from "../../../components/postListBottom";
+import PostListBottom from "../../../components/postListBottom";
 
 export default function MlfApp() {
   const [progress, setProgress] = useState(0);
@@ -118,7 +118,7 @@ export default function MlfApp() {
         </div>
       </div>
       <div className="comment"></div>
-      <ProjectListBottom title="project" />
+      <PostListBottom title="project" />
     </>
     /* jshint ignore:end */
   );

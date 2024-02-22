@@ -3,7 +3,7 @@ import "../../../assets/css/post.css";
 import Poster from "../../../assets/images/study/main_dali2.jpg";
 import Dali_dashboard from "../../../assets/images/study/main_dali.jpg";
 import Structure from "../../../assets/images/study/project/project_dali_structure.jpg";
-import ProjectListBottom from "../../../components/postListBottom";
+import PostListBottom from "../../../components/postListBottom";
 
 export default function Dali() {
   const [progress, setProgress] = useState(0);
@@ -18,6 +18,9 @@ export default function Dali() {
       const percentage = (scrollPosition / maxScroll) * 100;
 
       setProgress(percentage);
+      console.log("windowHeight:" + windowHeight);
+      console.log("bodyHeight:" + bodyHeight);
+      console.log("percentage:" + percentage);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -135,7 +138,7 @@ export default function Dali() {
         </div>
       </div>
       <div className="comment"></div>
-      <ProjectListBottom title="project" />
+      <PostListBottom title="project" />
     </>
     /* jshint ignore:end */
   );

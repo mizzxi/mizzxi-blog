@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../../assets/css/post.css";
 import Demo from "../../../assets/images/study/project/project_vote_result.jpg";
 import Ex from "../../../assets/images/study/project/project_vote_ex.gif";
-import ProjectListBottom from "../../../components/postListBottom";
+import PostListBottom from "../../../components/postListBottom";
 
 export default function Vote() {
   const [progress, setProgress] = useState(0);
@@ -112,7 +112,7 @@ export default function Vote() {
         </div>
       </div>
       <div className="comment"></div>
-      <ProjectListBottom title="project" />
+      <PostListBottom title="project" />
     </>
     /* jshint ignore:end */
   );
