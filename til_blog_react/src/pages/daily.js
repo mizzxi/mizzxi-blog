@@ -65,6 +65,30 @@ export default function Daily() {
             </div>
             <hr />
           </div>
+          <div id="dailyPost">
+            <img
+              src="https://avatars.githubusercontent.com/u/83504363?v=4"
+              className="dailyProfile"
+            />
+            mizzxi
+            <div className="dailyPost">
+              <div className="dailyPostImgBox">
+                <img
+                  id="postImg"
+                  src="https://cdn.discordapp.com/attachments/1198903037419331616/1210912295182405702/IMG_2975.jpg?ex=65ec48f4&is=65d9d3f4&hm=b967a7a3d8f8111c7cc1b5e7e5d306c96546194f3186e530dd89386721c1e884&"
+                />
+              </div>
+              <img src={Heart} />
+              <img src={Comment} />
+              <p>
+                <div>일상을 기록하는 공간📷</div>
+                컴퓨터 화면도 오래보면 멀미가 나는구나🤢 하루종일 코딩 힘들어
+                <br /> 외출하고싶다😥😥😥
+                <pre>2024.02.24</pre>
+              </p>
+            </div>
+            <hr />
+          </div>
         </div>
       </div>
     </>

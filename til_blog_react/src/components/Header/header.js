@@ -92,7 +92,9 @@ export default function Header() {
                 </a>
               </li>
               <li>
-                <a>- 일상[개발중]</a>
+                <a href="daily" style={{ color: "rgb(22, 22, 22)" }}>
+                  - 일상
+                </a>
               </li>
               <li>
                 <a onClick={postListMove} id="project">
