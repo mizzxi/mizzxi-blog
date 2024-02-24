@@ -206,10 +206,10 @@
 }
 .cardBox div {
   position: relative;
-  padding: 50px;
+  padding: 80px;
   padding-left: 290px;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .mainCard div:nth-child(4n) div {

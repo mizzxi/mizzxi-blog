@@ -109,25 +109,12 @@ export default function Main() {
         <div className="mainCard">
           <img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg" />
           <div className="cardBox">
-            <div>
-              포스트로 올리긴 애매하지만 적어놓고 싶은 생각이나 학습한 부분이
-              있을 때 작성할 카드뉴스 <br />
-              나중에는 사라질지도 모르는 부분💀
-            </div>
-          </div>
-          <img src="https://cdn.pixabay.com/photo/2019/04/26/18/14/video-4158203_1280.png" />
-          <div className="cardBox">
-            <div>
-              현재 가장 공부하기 어려운 분야는 컴퓨터 네트워크 <br />
-              애매하게 알고 있어서 더 복잡한 상태이므로 <br />
-              언제 한번 교보문구 가서 책을 구입해 봐야겠다
-            </div>
+            <div>💬</div>
           </div>
           <img src="https://cdn.pixabay.com/photo/2013/07/13/11/56/metro-159004_1280.png" />
           <div className="cardBox">
             <div>
-              mizzxi.site 도메인 구매 후 AWS EC2를 사용해서 서버 배포 완료!
-              웹주소에 내 닉네임이 들어가 있으니까 굉장히 감명 깊다😢
+              mizzxi.site 도메인 구매 후 AWS EC2를 사용해서 서버 배포 완료
               <br />
               <br />
               <a href="project-subwayGame">프로젝트 설명 읽으러 가기</a>
