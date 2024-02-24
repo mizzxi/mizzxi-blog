@@ -13,6 +13,7 @@ import TilExplain from "./pages/post/tilExplain";
 import TilTest from "./pages/post/Tils/tilTest";
 import MyInfo from "./pages/post/myInfo";
 import Interactive from "./pages/interactive";
+import Daily from "./pages/daily";
 
 //project post
 import Dali from "./pages/post/Projects/project-dali";
@@ -46,6 +47,7 @@ export default function App() {
           <Route path="/tilExplain" element={<TilExplain />} />
           <Route path="/myInfo" element={<MyInfo />} />
           <Route path="/interactive" element={<Interactive />} />
+          <Route path="/daily" element={<Daily />} />
 
           {/* project post */}
           <Route path="/project-dali" element={<Dali />} />

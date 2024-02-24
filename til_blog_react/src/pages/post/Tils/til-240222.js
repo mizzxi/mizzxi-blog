@@ -9,7 +9,7 @@ export default function Til240222() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      const bodyHeight = document.getElementById("post").clientHeight;
+      const bodyHeight = document.body.clientHeight;
 
       const maxScroll = bodyHeight - windowHeight;
       const percentage = (scrollPosition / maxScroll) * 100;

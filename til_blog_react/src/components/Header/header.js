@@ -100,7 +100,9 @@ export default function Header() {
                 </a>
               </li>
               <li>
-                <a href="interactive">- 인터랙티브</a>
+                <a href="interactive" style={{ color: "rgb(22, 22, 22)" }}>
+                  - 인터랙티브
+                </a>
               </li>
             </ul>
           </div>

@@ -18,9 +18,6 @@ export default function Dali() {
       const percentage = (scrollPosition / maxScroll) * 100;
 
       setProgress(percentage);
-      console.log("windowHeight:" + windowHeight);
-      console.log("bodyHeight:" + bodyHeight);
-      console.log("percentage:" + percentage);
     };
 
     window.addEventListener("scroll", handleScroll);
