@@ -12,6 +12,7 @@ import PostList from "./pages/postList";
 import TilExplain from "./pages/post/tilExplain";
 import TilTest from "./pages/post/Tils/tilTest";
 import MyInfo from "./pages/post/myInfo";
+import Interactive from "./pages/interactive";
 
 //project post
 import Dali from "./pages/post/Projects/project-dali";
@@ -44,13 +45,17 @@ export default function App() {
           <Route path="/postList" element={<PostList />} />
           <Route path="/tilExplain" element={<TilExplain />} />
           <Route path="/myInfo" element={<MyInfo />} />
+          <Route path="/interactive" element={<Interactive />} />
+
+          {/* project post */}
           <Route path="/project-dali" element={<Dali />} />
           <Route path="/project-graph" element={<Graph />} />
           <Route path="/project-vote" element={<Vote />} />
           <Route path="/project-mlfApp" element={<MlfApp />} />
           <Route path="/project-subwayGame" element={<SubwayGame />} />
-          <Route path="/tilTest" element={<TilTest />} />
 
+          {/* til post */}
+          <Route path="/tilTest" element={<TilTest />} />
           <Route path="/til-240220" element={<Til240220 />} />
           <Route path="/til-240222" element={<Til240222 />} />
         </Routes>

@@ -1,7 +1,7 @@
 {
   "all": {
     "mainTitle": [
-      "What is a TIL blog?",
+      "🔔 What is a TIL blog?",
       "TIL Test",
       "Graph Dentistry",
       "졸업작품",
@@ -48,7 +48,7 @@
 
   "til": {
     "mainTitle": [
-      "What is a TIL blog?",
+      "🔔 What is a TIL blog?",
       "TIL Test",
       "컴퓨터 구조와 운영체제",
       "컴퓨터 구조와 운영체제"
@@ -60,7 +60,7 @@
       "#2 CPU"
     ],
     "date": ["2024.01.01", "2024.01.30", "2024.02.20", "2024.02.22"],
-    "link": ["tilExplain", "tilTest", "til-240220", "til-240220"]
+    "link": ["tilExplain", "tilTest", "til-240220", "til-240222"]
   },
   "project": {
     "mainTitle": [
@@ -85,10 +85,10 @@
       "2024.02.16"
     ],
     "img": [
-      "https://cdn.discordapp.com/attachments/1198903037419331616/1198903201869602856/main_graph.jpg?ex=65c0989d&is=65ae239d&hm=934d1dc5367c7d63352cd0169579cdf78d3a82539fea98cf6879f4fd119f2802&",
-      "https://cdn.discordapp.com/attachments/1198903037419331616/1198903201282392096/main_dali2.jpg?ex=65c0989d&is=65ae239d&hm=3c891f5c48f76a6f212456ae3973496b80ef149b3a8699f15ee68167a695d709&",
-      "https://cdn.discordapp.com/attachments/1198903037419331616/1201466975113728010/project_vote_result.JPG?ex=65c9ec51&is=65b77751&hm=f338b915bea14bd9543b1b6dd525034184ccf8410def897467c6049a15d35ae0&",
-      "https://cdn.discordapp.com/attachments/1198903037419331616/1201858671932608512/project_mlf_result.jpg?ex=65cb591c&is=65b8e41c&hm=5643fd86f8829c47939dfd028062015b3bf7279515af97cef1f967363185bd7a&",
+      "https://cdn.discordapp.com/attachments/1198903037419331616/1198903201869602856/main_graph.jpg?ex=65e5829d&is=65d30d9d&hm=c4975769740dec05e8c11d2b80b6acf54ddc8a2a0e6f68d6c49ba0632deae816&",
+      "https://cdn.discordapp.com/attachments/1198903037419331616/1198903200351260672/main_dali.jpg?ex=65e5829d&is=65d30d9d&hm=25c274fe97d77c2af1f607b1883e73e380873b24227cffb5d9ff0d0a0880e651&",
+      "https://cdn.discordapp.com/attachments/1198903037419331616/1201466975113728010/project_vote_result.JPG?ex=65e59bd1&is=65d326d1&hm=ebc202d9e5c53f294c652e312e880b2cefbea9a2f7170a65a238168f517cccb2&",
+      "https://cdn.discordapp.com/attachments/1198903037419331616/1201858671932608512/project_mlf_result.jpg?ex=65e7089c&is=65d4939c&hm=2bb12cf7e2c602e71978752e2ab29f00a25377f428fe57a8a15c79c126d33937&",
       "https://cdn.discordapp.com/attachments/1198903037419331616/1201858672364363826/project_subway_game.jpg?ex=65ddce1c&is=65cb591c&hm=db65d1511868c48c462b5270e05fa70c09ef6587bd66cb420ca58db24de6acd9&"
     ],
     "link": [

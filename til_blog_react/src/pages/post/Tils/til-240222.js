@@ -98,6 +98,7 @@ export default function Til240222() {
               className="miniImg"
               src="https://blog.kakaocdn.net/dn/bGwiaN/btsnK9GaqzH/xWnO5Fs33ePsHQkaF4UFl1/img.png"
             />
+            <br />
             &emsp; 스택 주소 지정 방식: 스택 포인터가 가장 최근 저장 값을 나타냄{" "}
             <br />
             &emsp; 변위 주소 지정 방식: 연산 코드, 레지스터 값, 오퍼랜드(주소){" "}

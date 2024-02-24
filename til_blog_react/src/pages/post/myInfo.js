@@ -153,7 +153,7 @@ export default function MyInfo() {
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
-                  data-tooltip-content={"Spring [studying]"}
+                  data-tooltip-content={"Spring [tried]"}
                 >
                   <img src={Spring} />
                 </span>
@@ -161,7 +161,7 @@ export default function MyInfo() {
               <div className="skillGroup">
                 <span
                   data-tooltip-id="skill-tooltip"
-                  data-tooltip-content={"Aws [tried]"}
+                  data-tooltip-content={"Aws [studying]"}
                 >
                   <img src={Aws} />
                 </span>

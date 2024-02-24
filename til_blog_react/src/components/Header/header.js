@@ -92,7 +92,7 @@ export default function Header() {
                 </a>
               </li>
               <li>
-                <a>- 최근 관심 분야[미개발]</a>
+                <a>- 일상[개발중]</a>
               </li>
               <li>
                 <a onClick={postListMove} id="project">
@@ -100,7 +100,7 @@ export default function Header() {
                 </a>
               </li>
               <li>
-                <a>- 기타[미개발]</a>
+                <a href="interactive">- 인터랙티브</a>
               </li>
             </ul>
           </div>

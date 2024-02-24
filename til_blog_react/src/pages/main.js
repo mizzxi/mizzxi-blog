@@ -4,6 +4,7 @@ import main_til from "../assets/images/study/main_til.jpg";
 import main_movie from "../assets/images/study/main_movie.jpg";
 import main_dali2 from "../assets/images/study/main_dali2.jpg";
 import main_etc from "../assets/images/study/main_etc.jpg";
+import Interactive from "./interactive";
 
 export default function Main() {
   const [sliderMove, setSliderMove] = useState("slider");
@@ -27,7 +28,7 @@ export default function Main() {
                 <span>
                   <img src={main_til} className="mainTopImg"></img>
                   <p>
-                    <span className="mainTopTitle">What is a TIL blog?</span>
+                    <span className="mainTopTitle">🔔 What is a TIL blog?</span>
                     <br />
                     <span className="mainTopText">mizzxi의 TIL 블로그</span>
                   </p>
@@ -44,7 +45,7 @@ export default function Main() {
                   <p>
                     <span className="mainTopTitle">mizzxi</span>
                     <br />
-                    <span className="mainTopText">나에 대한 소개</span>
+                    <span className="mainTopText">소개</span>
                   </p>
                 </span>
               </a>
@@ -67,16 +68,16 @@ export default function Main() {
               </a>
             </li>
             <li>
-              <a>
+              <a href="interactive">
                 <span>
                   <img
-                    src="https://file.f-lab.kr/blog/01fdbcf3-d265-4ae8-acd2-20f8dc5f1350-p43JyekM8M01abbm.jpg"
+                    src="https://y7b6t9n6.rocketcdn.me/wp-content/uploads/2021/09/PNG_nGwLOE3.png"
                     className="mainTopImg"
                   ></img>
                   <p>
-                    <span className="mainTopTitle">기타</span>
+                    <span className="mainTopTitle">인터랙티브</span>
                     <br />
-                    <span className="mainTopText">테스트 중</span>
+                    <span className="mainTopText">Interactive Web Page</span>
                   </p>
                 </span>
               </a>
@@ -93,8 +94,8 @@ export default function Main() {
             </a>
           </div>
           <div id="sliderImg2">
-            <a href="tilExplain">
-              <span className="sliderTitle">나의 최근 관심 분야</span>
+            <a href="interactive">
+              <span className="sliderTitle">Interactive</span>
               <button className="sliderButton shadow" type="button">
                 더보기
               </button>

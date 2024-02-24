@@ -10,7 +10,7 @@ export default function TilExplain() {
       <div className="post">
         <div>
           <a>TIL</a>
-          <h1>What is a TIL blog?</h1>
+          <h1>🔔 What is a TIL blog?</h1>
           <h4>mizzxi의 TIL 블로그</h4>
           <p>mizzxi | 2024.01.01 15:33</p>
           <hr />
