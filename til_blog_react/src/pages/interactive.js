@@ -20,13 +20,18 @@ export default function Interactive() {
             </a>
           </div>
           <div className="webCard">
-            <a target="blank">
+            <a
+              href="https://web-mizzxi-youtube-17xco2nlsh8my76.sel5.cloudtype.app/"
+              target="blank"
+            >
               <div className="imgSize">
                 <div className="sticker" />
-                <img src="https://media.istockphoto.com/id/1399506394/ko/%EB%B2%A1%ED%84%B0/%EC%97%85-%EA%B8%B0%EC%88%A0%EA%B3%BC-%ED%95%99%EC%8A%B5%EC%9D%98-%EA%B0%9C%EB%85%90.jpg?s=612x612&w=0&k=20&c=4USH6Ylel7CC_USzCXX9T1l8fmDkRHlOusBnkUKoRk0=" />
+                <img src="https://cdn.discordapp.com/attachments/1198903037419331616/1213360637863010334/image.png?ex=65f53127&is=65e2bc27&hm=91acd2783fb98720c5fd1fa94212cb41211b646e66c2303efbaeace8a1856ec4&" />
               </div>
               <p>
-                개발중<p>2024.2~4</p>
+                유튜브 디자인 따라하기 프로젝트, 버튼 클릭과 댓글달기 기능 제공
+                [개발중]
+                <p>2024.2~4</p>
               </p>
             </a>
           </div>
@@ -37,7 +42,7 @@ export default function Interactive() {
                 <img src="https://img.freepik.com/free-vector/web-development-concept-flat-design-illustration_23-2148809198.jpg" />
               </div>
               <p>
-                개발중<p>2024.2~4</p>
+                [개발중]<p>2024.2~4</p>
               </p>
             </a>
           </div>

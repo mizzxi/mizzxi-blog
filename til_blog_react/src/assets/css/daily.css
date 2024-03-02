@@ -3,8 +3,6 @@
   top: 130px;
   width: 100%;
   font-family: "Noto Sans KR", sans-serif;
-  left: 50%;
-  transform: translate(-50%);
   padding-top: 100px;
 }
 .viewBtn {
@@ -13,9 +11,9 @@
   right: 80px;
 }
 .viewBtn button {
-  width: 40px;
-  height: 40px;
-  margin: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
 }
 .viewBtn button img {
   width: 20px;
@@ -23,33 +21,29 @@
 }
 
 .dailyPostBox {
-  position: absolute;
-  padding-top: 100px;
+  position: relative;
+  width: 600px;
   left: 50%;
   transform: translate(-50%);
+  margin-top: 80px;
+  padding-top: 80px;
   padding-bottom: 200px;
 }
 .dailyProfile {
   border-radius: 100%;
-  margin-left: 30px;
   margin-right: 10px;
   float: left;
 }
 .dailyPost {
-  margin: 30px;
-  width: 500px;
-}
-.dailyPostImgBox {
+  margin: 10px 0px 30px 0px;
   width: 100%;
-  height: 530px;
-  overflow: hidden;
 }
-.dailyPostImgBox img {
+.dailyPostImg {
   position: relative;
   width: 100%;
-  top: -30%;
-  float: left;
   height: auto;
+  aspect-ratio: 3 / 4;
+  top: -30%;
   object-fit: cover;
 }
 .dailyPost img {
@@ -68,4 +62,19 @@
 }
 .dailyPost hr {
   margin: 30px;
+}
+
+.smallPost {
+  position: relative;
+  width: 45%;
+  float: left;
+  margin: 15px;
+}
+.smallPostImg {
+  margin: 20px 0px 20px 0px;
+  width: 100%;
+  object-fit: cover;
+}
+.smallPostReactImg {
+  margin: 10px 10px 10px 0px;
 }
