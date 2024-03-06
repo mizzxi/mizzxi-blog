@@ -20,10 +20,7 @@ export default function Interactive() {
             </a>
           </div>
           <div className="webCard">
-            <a
-              href="https://web-mizzxi-youtube-17xco2nlsh8my76.sel5.cloudtype.app/"
-              target="blank"
-            >
+            <a href="https://mitube-page.netlify.app/" target="blank">
               <div className="imgSize">
                 <div className="sticker" />
                 <img src="https://cdn.discordapp.com/attachments/1198903037419331616/1213360637863010334/image.png?ex=65f53127&is=65e2bc27&hm=91acd2783fb98720c5fd1fa94212cb41211b646e66c2303efbaeace8a1856ec4&" />

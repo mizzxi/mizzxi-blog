@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "../assets/css/daily.css";
+
 import BIG from "../assets/images/ico/layout.png";
 import SMALL from "../assets/images/ico/layout2.png";
 import Heart from "../assets/images/ico/heart.png";
 import Comment from "../assets/images/ico/comment.png";
+
+import Img01 from "../assets/images/study/daily/IMG_2648.jpg";
+import Img02 from "../assets/images/study/daily/IMG_2736.jpg";
+import Img03 from "../assets/images/study/daily/IMG_4182.jpg";
+import Img04 from "../assets/images/study/daily/image.png";
 
 export default function Daily() {
   const bigClick = () => {
@@ -48,11 +54,7 @@ export default function Daily() {
             />
             mizzxi
             <div name="postSize" className="dailyPost">
-              <img
-                id="postImg"
-                src="https://cdn.discordapp.com/attachments/1198903037419331616/1210891428343980072/IMG_2648.jpg?ex=65ec3585&is=65d9c085&hm=343008eb0c6503b058a6f7da5d1897261d5d1a8f51be894bd4140588f2d8bd21&"
-                className="dailyPostImg"
-              />
+              <img id="postImg" src={Img01} />
               <img src={Heart} />
               <img src={Comment} />
               <p>
@@ -70,11 +72,7 @@ export default function Daily() {
             />
             mizzxi
             <div name="postSize" className="dailyPost">
-              <img
-                id="postImg"
-                src="https://cdn.discordapp.com/attachments/1198903037419331616/1210891429048746074/IMG_2736.jpg?ex=65ec3585&is=65d9c085&hm=46be4232c6cc1cf28c3227debd887a98d88276ba30db90cc574db100fe88bfd9&"
-                className="dailyPostImg"
-              />
+              <img id="postImg" src={Img02} />
               <img src={Heart} />
               <img src={Comment} />
               <p>
@@ -91,11 +89,7 @@ export default function Daily() {
             />
             mizzxi
             <div name="postSize" className="dailyPost">
-              <img
-                id="postImg"
-                src="https://cdn.discordapp.com/attachments/1198903037419331616/1213396290013233202/IMG_4182.jpg?ex=65f5525b&is=65e2dd5b&hm=d8e5614d1fc4c1e5fb1dacd16f5df89f475f88142bbe00caae76c28a4e7f5194&"
-                className="dailyPostImg"
-              />
+              <img id="postImg" src={Img03} className="dailyPostImg" />
               <img src={Heart} />
               <img src={Comment} />
               <p>
@@ -113,11 +107,7 @@ export default function Daily() {
             />
             mizzxi
             <div name="postSize" className="dailyPost">
-              <img
-                id="postImg"
-                src="https://cdn.discordapp.com/attachments/1198903037419331616/1213360430609604628/image.png?ex=65f530f5&is=65e2bbf5&hm=285afcc5f19b986015fa7eb63f0e73b670ad0f22c44aae3e54f4965d11933527&"
-                className="dailyPostImg"
-              />
+              <img id="postImg" src={Img04} className="dailyPostImg" />
               <img src={Heart} />
               <img src={Comment} />
               <p>
