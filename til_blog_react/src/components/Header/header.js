@@ -41,7 +41,11 @@ export default function Header() {
     gnbB.classList.add("hide");
   };
 
-  const searchClick = (e) => {};
+  const searchClick = (e) => {
+    let searchText = document.getElementById("searchInput").value;
+    navigate("searchPostList", { state: { title: searchText } });
+    window.location.reload();
+  };
 
   const postListMove = (e) => {
     console.log(e.target.id);
