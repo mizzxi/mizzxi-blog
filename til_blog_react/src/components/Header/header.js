@@ -43,7 +43,6 @@ export default function Header() {
 
   const searchClick = (e) => {
     let searchText = document.getElementById("searchInput").value;
-    window.location.reload();
     navigate("searchPostList", { state: { title: searchText } });
   };
 
