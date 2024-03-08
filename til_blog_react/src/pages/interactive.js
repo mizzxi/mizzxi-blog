@@ -26,8 +26,8 @@ export default function Interactive() {
                 <img src="https://cdn.discordapp.com/attachments/1198903037419331616/1213360637863010334/image.png?ex=65f53127&is=65e2bc27&hm=91acd2783fb98720c5fd1fa94212cb41211b646e66c2303efbaeace8a1856ec4&" />
               </div>
               <p>
-                유튜브 디자인 따라하기 프로젝트, 버튼 클릭과 댓글달기 기능 제공
-                [개발중]
+                유튜브 디자인 따라하기 프로젝트, 구독, 좋아요 버튼 클릭과
+                댓글달기 기능 제공 [개발중]
                 <p>2024.2~4</p>
               </p>
             </a>

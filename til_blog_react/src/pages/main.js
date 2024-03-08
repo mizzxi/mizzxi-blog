@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/css/main.css";
 import main_til from "../assets/images/study/main_til.jpg";
 import main_movie from "../assets/images/study/main_movie.jpg";
