@@ -54,7 +54,7 @@ export default function Daily() {
             />
             mizzxi
             <div name="postSize" className="dailyPost">
-              <img id="postImg" src={Img01} />
+              <img id="postImg" src={Img01} className="dailyPostImg" />
               <img src={Heart} />
               <img src={Comment} />
               <p>
@@ -72,7 +72,7 @@ export default function Daily() {
             />
             mizzxi
             <div name="postSize" className="dailyPost">
-              <img id="postImg" src={Img02} />
+              <img id="postImg" src={Img02} className="dailyPostImg" />
               <img src={Heart} />
               <img src={Comment} />
               <p>

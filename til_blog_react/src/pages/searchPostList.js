@@ -7,10 +7,12 @@ export default function SearchPostList() {
   const location = useLocation();
   const title = location.state.title.toLowerCase();
 
-  let { mainTitle, subTitle, date, link } = data["all"];
-  let deleteIndex = [];
-
   useEffect(() => {
+    let { mainTitle, subTitle, date, link } = JSON.parse(
+      JSON.stringify(data["all"])
+    );
+    let deleteIndex = [];
+
     mainTitle.map((v, i) => {
       if (
         mainTitle[i].toLowerCase().includes(title) ||
@@ -59,7 +61,7 @@ export default function SearchPostList() {
         postListMain.appendChild(postList);
       }
     });
-  }, [mainTitle, subTitle, date]);
+  }, [title]);
   return (
     /* jshint ignore:start */
     <>
