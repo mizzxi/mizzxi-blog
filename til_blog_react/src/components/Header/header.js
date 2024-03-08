@@ -46,6 +46,12 @@ export default function Header() {
     navigate("searchPostList", { state: { title: searchText } });
   };
 
+  const searchSubmit = (e) => {
+    if (e.key == "Enter") {
+      searchClick();
+    }
+  };
+
   const postListMove = (e) => {
     console.log(e.target.id);
     deleteClick();
@@ -68,6 +74,7 @@ export default function Header() {
             className="searchBox"
             type="test"
             placeholder="검색내용을 입력하세요."
+            onKeyDown={searchSubmit}
           ></input>
           <button type="submit" className="search" onClick={searchClick}>
             <img src={SEARCH}></img>
