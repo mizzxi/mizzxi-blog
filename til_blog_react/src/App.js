@@ -11,7 +11,6 @@ import "./App.css";
 import PostList from "./pages/postList";
 import SearchPostList from "./pages/searchPostList";
 import TilExplain from "./pages/post/tilExplain";
-import TilTest from "./pages/post/Tils/tilTest";
 import MyInfo from "./pages/post/myInfo";
 import Interactive from "./pages/interactive";
 import Daily from "./pages/daily";
@@ -59,7 +58,6 @@ export default function App() {
           <Route path="/project-subwayGame" element={<SubwayGame />} />
 
           {/* til post */}
-          <Route path="/tilTest" element={<TilTest />} />
           <Route path="/til-240220" element={<Til240220 />} />
           <Route path="/til-240222" element={<Til240222 />} />
         </Routes>

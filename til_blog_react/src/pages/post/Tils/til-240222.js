@@ -55,34 +55,33 @@ export default function Til240222() {
           <hr />
           <p className="postText">
             <br />
-            CPU의 구조와 기능에 대해서 더 자세히 알아보고자 한다.
+            이번에는 컴퓨터의 필수 부품 중의 하나인 CPU의 구조와 기능에 대해서
+            더 자세히 알아보고자 한다.
             <br />
             <br />
-            <h5>
-              ◼
-              <mark className="y">
-                CPU? 메모리에 저장된 명령어를 읽고, 해석 실행하는 부품
-              </mark>{" "}
-            </h5>
+            <h5>CPU란?</h5> 메모리에 저장된 명령어를 읽고, 해석 실행하는
+            부품이다.
             <img
               className="miniImg"
               src="https://breefin.com/assets/images/wysiwyg/1638865819_ch2p01_006_01.jpg"
             />
             <br />
-            <mark>ALU(== 연산장치):</mark> 레지스터를 통해 피연산자를 읽고
-            제어장치로부터 제어 신호를 읽음 → 연산을 수행한다 <br />
-            &emsp; 결과는 숫자, 문자, 주소로 나오고 일시적으로 레지스터에
+            CPU는 ALU와 제어장치, 레지스터로 구성되어있다. <br />
+            <br />
+            <mark>ALU(== 연산장치)</mark>는 레지스터를 통해 피연산자를 읽고
+            제어장치로부터 제어 신호를 읽은 후 연산을 수행한다. <br />
+            연산 결과는 숫자, 문자, 주소로 나오고 일시적으로 레지스터에
             저장된다. <br />
             &emsp;{" "}
             <mark className="y">
-              왜 일시적으로? cpu가 메모리에 접근하는 속도는 느리기 때문에
-              레지스터에 우선 저장하는 것이다.
+              왜 일시적으로 저장되는가? CPU가 메모리에 접근하는 속도는 느리기
+              때문에 시간 단축을 위해서 레지스터에 우선 저장하는 것이다.
             </mark>
             <br />
-            계산 결과와 함께 플래그를 내보낸다{" "}
+            계산 결과와 함께 플래그를 내보낸다.{" "}
             <mark className="y">
-              (플래그란? 양수와 음수를 구분하는 부호, 플래그 레지스터가 따로
-              있음)
+              (플래그란? 양수와 음수를 구분하는 부호를 말한다. 플래그 정보를
+              저장하는 플래그 레지스터가 따로 있다.)
             </mark>{" "}
             <br />
             <br />
@@ -94,7 +93,7 @@ export default function Til240222() {
             &emsp; 3. 플래그 받기 (양수 음수 구분 부호) <br />
             &emsp; 4. 시스템 버스 중 제어 버스에서 신호 받기 <br />
             <br />
-            <mark>레지스터:</mark> cpu의 저장 공간 <br />
+            <mark>레지스터:</mark> CPU의 저장 공간을 말한다. <br />
             <br />
             <mark className="y">- 레지스터 종류</mark> <br />
             &emsp; 프로그램 카운터: 명령어 주소, 명령어 포인터 <br />
@@ -108,22 +107,25 @@ export default function Til240222() {
             <mark className="y">- 주소 지정 방식</mark> <br />
             &emsp; 스택 주소 지정 방식: 스택 포인터가 가장 최근 저장 값을
             나타낸다. <br />
-            &emsp; 변위 주소 지정 방식: 연산 코드, 레지스터 값, 오퍼랜드(주소){" "}
-            <br />
+            &emsp; 변위 주소 지정 방식: 연산 코드, 레지스터 값, 오퍼랜드(주소)를
+            저장한다. <br />
             <br />
             <mark>명령어 사이클:</mark> 명령어를 처리하는 정형화된 흐름을
             말한다. <br />
-            &emsp; <mark className="y">인터럽트란? 흐름이 끊어지는 상황!</mark>
+            &emsp;{" "}
+            <mark className="y">
+              인터럽트란? 사이클 중 흐름이 끊어지는 상황!
+            </mark>
             <br />
             <img
               className="miniImg"
               src="https://velog.velcdn.com/images/localgaji/post/040731bb-6f1b-48fe-8b45-54c5cb6e281e/image.png"
             />
             <br />
-            &emsp; &emsp; 동기 인터럽트란? CPU가 오류나 예외적 상황에 마주친
-            상황(exception 예외) <br />
-            &emsp; &emsp; 비동기 인터럽트란? 입출력 장치에 의해 발생한 인터럽트,
-            장치 알림 <br />
+            &emsp; &emsp; 동기 인터럽트는 CPU가 오류나 예외적 상황에 마주친
+            상황(exception 예외)이다. <br />
+            &emsp; &emsp; 비동기 인터럽트는 입출력 장치에 의해 발생한 인터럽트로
+            예를들어 장치 알림이 있다. <br />
             &emsp; &emsp; + 입출력 장치 ex) 프린트, 키보드, 마우스 <br />
             <br />
             &emsp; 인출 사이클: 메모리에 있는 명령어를 CPU로 가져오는 단계{" "}
@@ -133,8 +135,8 @@ export default function Til240222() {
             접근하는 단계
             <br />
             <br />- 예외의 종류 <br /> &emsp; 🔹 fault: 예외 처리 후 예외 발생
-            명령어부터 다시 실행 <br /> &emsp; 🔹 trap: 예외 처리 후 예외 발생
-            명령어 <mark className="y">다음부터</mark> 다시 실행
+            명령어부터 다시 실행한다. <br /> &emsp; 🔹 trap: 예외 처리 후 예외
+            발생 명령어 <mark className="y">다음부터</mark> 다시 실행한다.
             <br /> &emsp; 🔹 abort: 중단 <br />
             <br />
             <mark>클럭:</mark> 클럭 신호가 빠를수록 CPU도 빨라진다, 헤르츠
@@ -164,13 +166,13 @@ export default function Til240222() {
             기술 <br />
             <br />
             <mark className="y">
-              슈퍼스칼라란? 여러개의 파이프라인을 가지는 것
+              슈퍼스칼라란? 여러개의 파이프라인을 가지는 것을 말한다.
             </mark>{" "}
             <br />
             <br />
             비순차적 명령어 처리 OoOE: 순차적이지 않아도 결과가 달라지지 않는
-            연산들은 기다리지 않고 바로 실행 (파이프라인 중단을 방지한다.){" "}
-            <br />
+            연산들은 기다리지 않고 바로 실행하는 방식이다. (파이프라인 중단을
+            방지한다.) <br />
             <br />
           </p>
         </div>
