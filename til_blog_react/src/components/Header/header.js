@@ -108,7 +108,7 @@ export default function Header() {
               </li>
               <li>
                 <a onClick={postListMove} id="project">
-                  - 프로젝트
+                  - 프로젝트 ⭐
                 </a>
               </li>
               <li>
