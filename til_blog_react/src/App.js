@@ -25,6 +25,7 @@ import SubwayGame from "./pages/post/Projects/project-subwaygame";
 //til post
 import Til240220 from "./pages/post/Tils/til-240220";
 import Til240222 from "./pages/post/Tils/til-240222";
+import Til240319 from "./pages/post/Tils/til-240319";
 
 export default function App() {
   const history = createBrowserHistory();
@@ -60,6 +61,7 @@ export default function App() {
           {/* til post */}
           <Route path="/til-240220" element={<Til240220 />} />
           <Route path="/til-240222" element={<Til240222 />} />
+          <Route path="/til-240319" element={<Til240319 />} />
         </Routes>
         <FOOTER />
       </BrowserRouter>

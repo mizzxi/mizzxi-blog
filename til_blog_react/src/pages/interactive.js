@@ -11,7 +11,7 @@ export default function Interactive() {
             <a href="https://mintendo.netlify.app/" target="blank">
               <div className="imgSize">
                 <div className="sticker" />
-                <img src="https://cdn.discordapp.com/attachments/1198903037419331616/1210836318074970162/mintendo.JPG?ex=65ec0232&is=65d98d32&hm=ac80587dbdfa26a7958373a67d846aaa7e8e75f5e0c122ec317b4c8789fc2d86&" />
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdeSd5h%2FbtsFF3pYjib%2FWOwuWPUX7KogKtrJWFxVb1%2Fimg.jpg" />
               </div>
               <p>
                 가상의 닌텐도를 체험해 볼 수 있는 페이지, 총 3가지 인터랙티브한
@@ -23,7 +23,7 @@ export default function Interactive() {
             <a href="https://mitube-page.netlify.app/" target="blank">
               <div className="imgSize">
                 <div className="sticker" />
-                <img src="https://cdn.discordapp.com/attachments/1198903037419331616/1213360637863010334/image.png?ex=65f53127&is=65e2bc27&hm=91acd2783fb98720c5fd1fa94212cb41211b646e66c2303efbaeace8a1856ec4&" />
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FlkhsY%2FbtsFGLClOd2%2FMMvAe6QGKdob3vaKyJLmb0%2Fimg.png" />
               </div>
               <p>
                 유튜브 디자인 따라하기 프로젝트, 구독, 좋아요 버튼 클릭과
