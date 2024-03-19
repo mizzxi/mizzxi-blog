@@ -173,7 +173,7 @@ export default function Til240319() {
               <a>#컴퓨터구조</a>
             </li>
             <li>
-              <a>#CPU</a>
+              <a>#메모리</a>
             </li>
           </ul>
         </div>

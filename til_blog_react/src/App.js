@@ -21,6 +21,7 @@ import Graph from "./pages/post/Projects/project-graph";
 import Vote from "./pages/post/Projects/project-vote";
 import MlfApp from "./pages/post/Projects/project-mlfApp";
 import SubwayGame from "./pages/post/Projects/project-subwaygame";
+import Design from "./pages/post/Projects/project_design";
 
 //til post
 import Til240220 from "./pages/post/Tils/til-240220";
@@ -57,6 +58,7 @@ export default function App() {
           <Route path="/project-vote" element={<Vote />} />
           <Route path="/project-mlfApp" element={<MlfApp />} />
           <Route path="/project-subwayGame" element={<SubwayGame />} />
+          <Route path="/project-design" element={<Design />} />
 
           {/* til post */}
           <Route path="/til-240220" element={<Til240220 />} />
