@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mizzxi-blog/static/css/main.274bfbe1.css",
-    "main.js": "/mizzxi-blog/static/js/main.bfb5de98.js",
+    "main.css": "/mizzxi-blog/static/css/main.3cabd79a.css",
+    "main.js": "/mizzxi-blog/static/js/main.29aebc90.js",
     "static/media/main_dali2.jpg": "/mizzxi-blog/static/media/main_dali2.22b17b55fa45af6311a5.jpg",
     "static/media/project_vote_ex.gif": "/mizzxi-blog/static/media/project_vote_ex.8c4503410aa9013cec14.gif",
     "static/media/project_mlf_chat.gif": "/mizzxi-blog/static/media/project_mlf_chat.349d5e197339336f7412.gif",
@@ -10,8 +10,11 @@
     "static/media/project_mlf_minigame.gif": "/mizzxi-blog/static/media/project_mlf_minigame.5e185d38a48d305d5997.gif",
     "static/media/IMG_2975.jpg": "/mizzxi-blog/static/media/IMG_2975.9ba6b4a6a200d2d7b862.jpg",
     "static/media/image.png": "/mizzxi-blog/static/media/image.436e934f63a5a8c4768a.png",
+    "static/media/project_dali_aw.jpg": "/mizzxi-blog/static/media/project_dali_aw.ddde943d8ab8e507315a.jpg",
     "static/media/slider2.png": "/mizzxi-blog/static/media/slider2.f94c3192af6caa2c5e1e.png",
     "static/media/main_info.gif": "/mizzxi-blog/static/media/main_info.717669a78176657e9efd.gif",
+    "static/media/project_dali_aw2.jpg": "/mizzxi-blog/static/media/project_dali_aw2.c65517692617dc9e0f4d.jpg",
+    "static/media/project_graph_aw.jpg": "/mizzxi-blog/static/media/project_graph_aw.98911f54581ab93583dc.jpg",
     "static/media/profilePhoto.jpg": "/mizzxi-blog/static/media/profilePhoto.f60ee45aabfcbeab5303.jpg",
     "static/media/main_movie.jpg": "/mizzxi-blog/static/media/main_movie.62af8f07180028c78616.jpg",
     "static/media/main_graph.jpg": "/mizzxi-blog/static/media/main_graph.de0731c66a32cc04b351.jpg",
@@ -57,11 +60,11 @@
     "static/media/search.png": "/mizzxi-blog/static/media/search.f8625530f28f5f5d0bfa.png",
     "static/media/comment.png": "/mizzxi-blog/static/media/comment.d793a474e8e18362ec9d.png",
     "index.html": "/mizzxi-blog/index.html",
-    "main.274bfbe1.css.map": "/mizzxi-blog/static/css/main.274bfbe1.css.map",
-    "main.bfb5de98.js.map": "/mizzxi-blog/static/js/main.bfb5de98.js.map"
+    "main.3cabd79a.css.map": "/mizzxi-blog/static/css/main.3cabd79a.css.map",
+    "main.29aebc90.js.map": "/mizzxi-blog/static/js/main.29aebc90.js.map"
   },
   "entrypoints": [
-    "static/css/main.274bfbe1.css",
-    "static/js/main.bfb5de98.js"
+    "static/css/main.3cabd79a.css",
+    "static/js/main.29aebc90.js"
   ]
 }
