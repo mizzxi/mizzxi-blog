@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mizzxi-blog/static/css/main.a3e111e7.css",
-    "main.js": "/mizzxi-blog/static/js/main.c171b5c1.js",
+    "main.css": "/mizzxi-blog/static/css/main.f34fd38a.css",
+    "main.js": "/mizzxi-blog/static/js/main.90050438.js",
     "static/media/main_dali2.jpg": "/mizzxi-blog/static/media/main_dali2.22b17b55fa45af6311a5.jpg",
     "static/media/project_vote_ex.gif": "/mizzxi-blog/static/media/project_vote_ex.8c4503410aa9013cec14.gif",
     "static/media/project_mlf_chat.gif": "/mizzxi-blog/static/media/project_mlf_chat.349d5e197339336f7412.gif",
@@ -22,7 +22,6 @@
     "static/media/project_graph_ex.jpg": "/mizzxi-blog/static/media/project_graph_ex.bb817ecb5bcbdf91c326.jpg",
     "static/media/project_vote_result.jpg": "/mizzxi-blog/static/media/project_vote_result.db703d32689f5bf0225f.jpg",
     "static/media/project_design_panel.jpg": "/mizzxi-blog/static/media/project_design_panel.4035893cf20b1fc79e45.jpg",
-    "static/media/main_info.jpg": "/mizzxi-blog/static/media/main_info.f4df18a2b3c5382d911e.jpg",
     "static/media/chrome.png": "/mizzxi-blog/static/media/chrome.0ccd8e49264f820f7088.png",
     "static/media/up2.png": "/mizzxi-blog/static/media/up2.5e6dd60f1eaae8ae0ba3.png",
     "static/media/project_design_blog.jpg": "/mizzxi-blog/static/media/project_design_blog.59918369e084c5b8a668.jpg",
@@ -33,6 +32,7 @@
     "static/media/project_subway_game.jpg": "/mizzxi-blog/static/media/project_subway_game.02a3b686d3e50c0aa3c1.jpg",
     "static/media/project_design_menu.jpg": "/mizzxi-blog/static/media/project_design_menu.18f572433d97232fc673.jpg",
     "static/media/project_graph_structure.jpg": "/mizzxi-blog/static/media/project_graph_structure.5e79ea460bef754a3032.jpg",
+    "static/media/main_info.jpg": "/mizzxi-blog/static/media/main_info.4e6d9e19c64f25fe6e1c.jpg",
     "static/media/project_subway_ending.jpg": "/mizzxi-blog/static/media/project_subway_ending.2fd37a922805e54ea3e0.jpg",
     "static/media/google.png": "/mizzxi-blog/static/media/google.a0710f85af915b8f30e6.png",
     "static/media/python.png": "/mizzxi-blog/static/media/python.696fb673ae2c4cb29d89.png",
@@ -53,18 +53,16 @@
     "static/media/project_dali_structure.jpg": "/mizzxi-blog/static/media/project_dali_structure.23c2786da00280317c17.jpg",
     "static/media/git.png": "/mizzxi-blog/static/media/git.648e666260ca9d409a49.png",
     "static/media/html.png": "/mizzxi-blog/static/media/html.2a99857f0d0ca941271f.png",
-    "static/media/layout2.png": "/mizzxi-blog/static/media/layout2.35d9e4c9417b82dcfc94.png",
     "static/media/css.png": "/mizzxi-blog/static/media/css.e7a4a3a007f3e52c563f.png",
     "static/media/heart.png": "/mizzxi-blog/static/media/heart.eb80668c7638b9221618.png",
     "static/media/js.png": "/mizzxi-blog/static/media/js.1a2f4251ceef5924f857.png",
-    "static/media/search.png": "/mizzxi-blog/static/media/search.f8625530f28f5f5d0bfa.png",
     "static/media/comment.png": "/mizzxi-blog/static/media/comment.d793a474e8e18362ec9d.png",
     "index.html": "/mizzxi-blog/index.html",
-    "main.a3e111e7.css.map": "/mizzxi-blog/static/css/main.a3e111e7.css.map",
-    "main.c171b5c1.js.map": "/mizzxi-blog/static/js/main.c171b5c1.js.map"
+    "main.f34fd38a.css.map": "/mizzxi-blog/static/css/main.f34fd38a.css.map",
+    "main.90050438.js.map": "/mizzxi-blog/static/js/main.90050438.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3e111e7.css",
-    "static/js/main.c171b5c1.js"
+    "static/css/main.f34fd38a.css",
+    "static/js/main.90050438.js"
   ]
 }
