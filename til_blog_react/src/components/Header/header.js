@@ -64,7 +64,11 @@ export default function Header() {
     <>
       <div className="containerStyle">
         <button className="menu" onClick={menuClick}>
-          <SvgIcon component={MenuIcon} fontSize="large" />
+          <SvgIcon
+            component={MenuIcon}
+            fontSize="large"
+            style={{ color: "black" }}
+          />
         </button>
         <a href="/mizzxi-blog" style={header_style} className="headerTitle">
           mizzxi TIL Blog
@@ -82,7 +86,11 @@ export default function Header() {
             onKeyDown={searchSubmit}
           ></input>
           <button type="submit" className="search" onClick={searchClick}>
-            <SvgIcon component={SearchIcon} fontSize="large" />
+            <SvgIcon
+              component={SearchIcon}
+              fontSize="large"
+              style={{ color: "black" }}
+            />
           </button>
         </div>
       </div>
@@ -90,7 +98,11 @@ export default function Header() {
       <div id="gnb" className="gnb shadow hide">
         <div className="containerStyle">
           <button className="menu" onClick={deleteClick}>
-            <SvgIcon component={ClearIcon} fontSize="large" />
+            <SvgIcon
+              component={ClearIcon}
+              fontSize="large"
+              style={{ color: "black" }}
+            />
           </button>
           <div className="gnbText">
             <h4>

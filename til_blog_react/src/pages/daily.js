@@ -41,10 +41,18 @@ export default function Daily() {
       <div className="daily">
         <div className="viewBtn">
           <button onClick={bigClick}>
-            <SvgIcon component={SquareOutlinedIcon} fontSize="medium" />
+            <SvgIcon
+              component={SquareOutlinedIcon}
+              fontSize="medium"
+              style={{ color: "black" }}
+            />
           </button>
           <button onClick={smallClick}>
-            <SvgIcon component={GridViewOutlinedIcon} fontSize="medium" />
+            <SvgIcon
+              component={GridViewOutlinedIcon}
+              fontSize="medium"
+              style={{ color: "black" }}
+            />
           </button>
         </div>
         <div className="dailyPostBox">
