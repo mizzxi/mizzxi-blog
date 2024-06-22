@@ -78,7 +78,7 @@ export default function Main() {
                     <span className="mainTopTitle">논문경험</span>
                     <br />
                     <span className="mainTopText">
-                      ML을 이용한 그래프 왜곡 탐지 및 교정 시스템
+                      ML을 이용한 그래프 왜곡 탐지 및 교정 시스템 [프론트엔드]
                     </span>
                   </p>
                 </span>

@@ -4,6 +4,7 @@ import PROFILEPHOTO from "../../assets/images/study/profilePhoto.jpg";
 import PROJECT1 from "../../assets/images/study/main_dali.jpg";
 import PROJECT2 from "../../assets/images/study/project/project_graph_dbpia.jpg";
 import PROJECT3 from "../../assets/images/study/project/project_vote_result.jpg";
+import PROJECT4 from "../../assets/images/study/project/project_subway_game.jpg";
 import {
   Aws,
   Bigquery,
@@ -26,6 +27,11 @@ export default function MyInfo() {
   const [profileTitle, setProfileTitle] = useState("hidden");
   const [skillTitle, setSkillTitle] = useState("hidden");
   const [projectTitle, setProjectTitle] = useState("hidden");
+  const skillArr = [];
+  let skillEffect = true;
+  for (let i = 1; i <= 14; i++) {
+    skillArr.push("skill" + i);
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -37,6 +43,22 @@ export default function MyInfo() {
   //초기 설정
   document.body.style.transition = "background-color 1.5s ease";
 
+  function skillDisplay(op) {
+    if (op) {
+      skillArr.forEach((v, i) => {
+        setTimeout(() => {
+          let sk = document.getElementById(v);
+          sk.className = "fade-in-fwd";
+        }, i * 250 + 800);
+      });
+    } else {
+      skillArr.map((v, i) => {
+        let sk = document.getElementById(v);
+        sk.className = "hidden";
+      });
+    }
+  }
+
   const handleScroll = () => {
     if (window.scrollY == 0) {
       document.body.style.backgroundColor = "#ffffff";
@@ -44,10 +66,18 @@ export default function MyInfo() {
       setSkillTitle("hidden");
       setProfileTitle("slide-in-right");
       document.body.style.backgroundColor = "#1B1A16";
+      if (skillEffect) {
+        skillEffect = false;
+        skillDisplay(skillEffect);
+      }
     } else if (window.scrollY >= 1050 && window.scrollY < 1900) {
       setProfileTitle("hidden");
       setProjectTitle("hidden");
       setSkillTitle("slide-in-left");
+      if (!skillEffect) {
+        skillEffect = true;
+        skillDisplay(skillEffect);
+      }
     } else if (window.scrollY >= 2300 && window.scrollY < 3800) {
       setSkillTitle("hidden");
       setProjectTitle("slide-in-right");
@@ -106,24 +136,28 @@ export default function MyInfo() {
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"JavaScript [Familiar]"}
+                  id="skill1"
                 >
                   <img src={Js} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"HTML [Familiar]"}
+                  id="skill2"
                 >
                   <img src={Html} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"CSS [Familiar]"}
+                  id="skill3"
                 >
                   <img src={Css} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"React [Familiar]"}
+                  id="skill4"
                 >
                   <img src={ReactIco} />
                 </span>
@@ -132,24 +166,28 @@ export default function MyInfo() {
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"Java [studying]"}
+                  id="skill5"
                 >
                   <img src={Java} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"Python [Familiar]"}
+                  id="skill6"
                 >
                   <img src={Python} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"Node.js [studying]"}
+                  id="skill7"
                 >
                   <img src={Node} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"Spring [tried]"}
+                  id="skill8"
                 >
                   <img src={Spring} />
                 </span>
@@ -158,36 +196,42 @@ export default function MyInfo() {
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"Aws [studying]"}
+                  id="skill9"
                 >
                   <img src={Aws} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"Chrome extension [tried]"}
+                  id="skill10"
                 >
                   <img src={Chrome} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"Google Analytics [tried]"}
+                  id="skill11"
                 >
                   <img src={GA} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"BigQuery [tried]"}
+                  id="skill12"
                 >
                   <img src={Bigquery} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"ElasticSearch & Kibana [tried]"}
+                  id="skill13"
                 >
                   <img src={Elastic} />
                 </span>
                 <span
                   data-tooltip-id="skill-tooltip"
                   data-tooltip-content={"Github"}
+                  id="skill14"
                 >
                   <img src={Github} />
                 </span>
@@ -222,7 +266,9 @@ export default function MyInfo() {
                     <br />
                     2022.07.01 ~ 2023.02.28
                   </p>
-                  <a href="project-dali">클릭하여 게시물로 이동</a>
+                  <a className="projectLink" href="project-dali">
+                    클릭하여 게시물로 이동
+                  </a>
                 </div>
               </div>
             </div>
@@ -243,7 +289,9 @@ export default function MyInfo() {
                     <br />
                     2022.12.10 ~ 2022.09.05
                   </p>
-                  <a href="project-graph">클릭하여 게시물로 이동</a>
+                  <a className="projectLink" href="project-graph">
+                    클릭하여 게시물로 이동
+                  </a>
                 </div>
               </div>
             </div>
@@ -262,7 +310,30 @@ export default function MyInfo() {
                     <br />
                     2022.05.01 ~ 2022.06.01
                   </p>
-                  <a href="project-vote">클릭하여 게시물로 이동</a>
+                  <a className="projectLink" href="project-vote">
+                    클릭하여 게시물로 이동
+                  </a>
+                </div>
+              </div>
+            </div>{" "}
+            <div className="project4">
+              <div className="project">
+                <img src={PROJECT4} />
+                <div id="projectText">
+                  <p>친구들과 함께하는 지하철 1호선 역이름 말하기 게임</p>
+                  <p>
+                    3명의 플레이어들이 지하철 역 이름을 10초안에 입력하는
+                    미니게임 프로젝트입니다.
+                  </p>
+                  <p>
+                    사용🔨 #React #socket.io #node.js #AWS
+                    <br />
+                    <br />
+                    2022.05.01 ~ 2022.06.01
+                  </p>
+                  <a className="projectLink" href="project-subwaygame">
+                    클릭하여 게시물로 이동
+                  </a>
                 </div>
               </div>
             </div>
