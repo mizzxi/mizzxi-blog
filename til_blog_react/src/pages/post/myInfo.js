@@ -49,7 +49,7 @@ export default function MyInfo() {
         setTimeout(() => {
           let sk = document.getElementById(v);
           sk.className = "fade-in-fwd";
-        }, i * 250 + 800);
+        }, i * 220 + 600);
       });
     } else {
       skillArr.map((v, i) => {

@@ -136,9 +136,13 @@ export default function Header() {
             </ul>
           </div>
           <div className="gnbFooter">
-            <a href="https://github.com/mizzxi" target="blank">
-              <img src={GIT} />
-            </a>
+            <div
+              className="gnbView"
+              href="http://hits.dwyl.com/mizzxi.github.io/mizzxi-blog/"
+              target="_blank"
+            >
+              <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=http%3A%2F%2Fhits.dwyl.com%2Fmizzxi.github.io%2Fmizzxi-blog%2F&count_bg=%239DBBD0&title_bg=%23FFFFFF&icon=&icon_color=%23E7E7E7&title=+%F0%9F%91%80+++&edge_flat=false" />
+            </div>
             <p>Created based on TISTORY.</p>
           </div>
         </div>
