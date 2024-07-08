@@ -1,0 +1,53 @@
+.listTitleBottom {
+  position: absolute;
+  width: 90%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.4em;
+  left: 50%;
+  transform: translate(-50%);
+}
+.postListBottom {
+  position: absolute;
+  height: 700px;
+  width: 90%;
+  margin-top: 30px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.35em;
+  left: 50%;
+  transform: translate(-50%);
+}
+.postListBoxBottom {
+}
+.listHorizontal {
+  float: left;
+}
+a div:nth-child(2) {
+  margin-left: 180px;
+}
+.postListImgBottom {
+  position: relative;
+  margin-top: 20px;
+  width: 150px;
+  height: 120px;
+}
+.postListTitleBottom {
+  position: relative;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.postListSubTitleBottom {
+  position: relative;
+  font-size: 0.8em;
+  width: 80%;
+}
+.postListDateBottom {
+  position: relative;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  text-align: right;
+  border-bottom: 1px solid rgba(61, 61, 61, 0.158);
+  padding-right: 5px;
+  font-size: 0.7em;
+}

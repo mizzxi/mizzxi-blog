@@ -1,0 +1,310 @@
+.mainContainer {
+  position: absolute;
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.9em;
+  color: rgb(126, 126, 126);
+  z-index: 1;
+  top: 200px;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.mainTopPost ul {
+  position: relative;
+  list-style: none;
+  width: 80%;
+  display: flex;
+  padding: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.mainTopPost li {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin: 15px;
+  margin-bottom: 10px;
+}
+.mainTopPost li:hover {
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.39);
+}
+.mainTopImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.topImgSize {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+@media screen and (max-width: 1023px) {
+  .mainTopPost ul {
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+  .mainTopPost ul li:nth-of-type(1) {
+    position: absolute;
+    top: -15px;
+    left: 8.5%;
+    display: inline-block;
+  }
+  .mainTopPost ul li:nth-of-type(2) {
+    position: absolute;
+    top: -15px;
+    right: 8.5%;
+    display: inline-block;
+  }
+  .mainTopPost ul li:nth-of-type(3) {
+    position: absolute;
+    top: 330px;
+    left: 8.5%;
+    display: inline-block;
+  }
+  .mainTopPost ul li:nth-of-type(4) {
+    position: absolute;
+    top: 330px;
+    right: 8.5%;
+    display: inline-block;
+  }
+  .mainTopPost li {
+    width: 38%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mainTopPost ul {
+    width: 90%;
+    left: 50%;
+    display: inline-block;
+  }
+  .mainTopPost ul li:nth-of-type(1) {
+    position: relative;
+    top: 0px;
+    margin-left: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+  }
+  .mainTopPost ul li:nth-of-type(2) {
+    position: relative;
+    top: 0px;
+    margin-left: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+  }
+  .mainTopPost ul li:nth-of-type(3) {
+    position: relative;
+    top: 0px;
+    margin-left: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+  }
+  .mainTopPost ul li:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    margin-left: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+  }
+  .mainTopPost li {
+    width: 70%;
+    float: left;
+    margin-bottom: 10px;
+  }
+}
+
+.mainTopPost p {
+  margin-top: 10px;
+  line-height: 200%;
+}
+.mainTopTitle {
+  text-decoration: underline;
+}
+.mainTopText {
+  font-size: 1.1em;
+  color: rgb(110, 110, 110);
+  font-weight: 900;
+}
+
+.slider {
+  position: relative;
+  margin-top: 150px;
+  width: 100%;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.411); /*test*/
+  text-align: center;
+  display: flex;
+}
+@media screen and (max-width: 1023px) {
+  .slider {
+    margin-top: 800px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .slider {
+    margin-top: 100px;
+  }
+}
+
+.slider div {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 0;
+}
+.sliding {
+  transition: all 1s;
+  transform: translate(-100%);
+}
+.slidingBack {
+  transition: all 1s;
+  transform: translate(0%);
+}
+
+#sliderImg1 {
+  background-image: url(../images/study/slider1.jpg);
+}
+#sliderImg2 {
+  background-image: url(../images/study/slider2.png);
+}
+
+.sliderTitle {
+  font-size: 3em;
+  font-weight: 900;
+  position: absolute;
+  top: 180px;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 3px 3px 6px rgb(53, 53, 53);
+  padding: 0px 15px 5px 15px;
+}
+.sliderTitle:hover {
+  color: rgba(255, 255, 255, 0.548);
+}
+
+.slider .sliderButton {
+  position: absolute;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.192);
+  bottom: 0px;
+  width: 120px;
+  height: 50px;
+  top: 260px;
+  color: rgb(255, 255, 255);
+  transform: translate(-80%, -30%);
+  font-size: 13pt !important;
+  text-shadow: 1px 1px 3px rgb(53, 53, 53);
+}
+.slider .sliderButton:hover {
+  color: rgba(255, 255, 255, 0.548);
+}
+.sliderControl {
+  position: relative;
+  top: -260px;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+.sliderControl #prev {
+  position: absolute;
+  left: 0px;
+  content: "";
+  width: 50px; /* 사이즈 */
+  height: 50px; /* 사이즈 */
+  border-top: 3.5px solid #ffffff; /* 선 두께 */
+  border-right: 3.5px solid #ffffff; /* 선 두께 */
+  transform: rotate(225deg); /* 각도 */
+}
+.sliderControl #next {
+  position: absolute;
+  right: 0px;
+  content: "";
+  width: 50px; /* 사이즈 */
+  height: 50px; /* 사이즈 */
+  border-top: 3.5px solid white; /* 선 두께 */
+  border-right: 3.5px solid white; /* 선 두께 */
+  transform: rotate(45deg); /* 각도 */
+}
+
+.mainCard {
+  position: relative;
+  top: 50px;
+  font-size: 0.8em;
+  margin-bottom: 200px;
+}
+.cardBox {
+  position: relative;
+  width: 80%;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin-bottom: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  overflow-y: scroll;
+}
+.cardBox:nth-child(4n) {
+  direction: rtl;
+}
+
+.mainCard img:nth-child(4n + 1) {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  left: 10%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  opacity: 90%;
+}
+.cardBox div {
+  position: relative;
+  padding: 80px;
+  padding-left: 290px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.mainCard div:nth-child(4n) div {
+  position: relative;
+  padding: 50px;
+  padding-right: 290px;
+  text-align: center;
+}
+.mainCard img:nth-child(3n) {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  right: 10%;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 90%;
+}
+
+.bottomImg {
+  position: relative;
+  background-image: url(../images/study/main_etc.jpg);
+  background-size: cover;
+  width: 3000px;
+  left: -20px;
+  top: 20px;
+  height: 300px;
+  opacity: 80%;
+  filter: brightness(80%);
+}

@@ -1,0 +1,517 @@
+.info {
+  position: absolute;
+  width: 75%;
+  margin-top: 200px;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 50px 0 50px 0;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.profile {
+  position: relative;
+  width: 100%;
+  height: 1100px;
+  background-image: url(../images/study/main_til.jpg);
+  background-size: cover;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.profileCover {
+  background-color: #000000;
+  opacity: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+}
+
+.profile img {
+  border-radius: 100%;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  left: 70%;
+  top: 250px;
+  position: absolute;
+}
+@media screen and (max-width: 1180px) {
+  .profile img {
+    width: 150px;
+    top: 320px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .profile img {
+    width: 100px;
+    top: 320px;
+    height: auto;
+  }
+}
+
+.profile h1 {
+  position: relative;
+  top: 130px;
+  left: 150px;
+  border-bottom: 3px solid white;
+}
+
+.profile h2 {
+  position: relative;
+  right: 35%;
+  top: 250px;
+  text-align: right;
+  line-height: 2em;
+}
+.profile h2 p {
+  font-weight: 900;
+  font-size: 1.2em;
+}
+.profile h5 {
+  padding-left: 40%;
+  height: 280px;
+  overflow-y: auto;
+  padding-right: 10px;
+  line-height: 1.4em;
+}
+.profile h5 div {
+  color: #92c7cf;
+  display: inline-block;
+}
+
+.profile .mind {
+  position: relative;
+  height: 180px;
+  top: 300px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  color: #ffffff;
+  background-color: #00000051;
+  padding: 30px;
+  overflow: auto;
+}
+.profile .mind p {
+  padding-top: 25px;
+  font-size: 1.2em;
+}
+#typingWrapper {
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+#typing {
+  margin-top: 10px;
+  font-size: 1.15em;
+  color: #74a1a8;
+  width: 50ch;
+  animation: typing 7s steps(50) infinite,
+    blink 0.8s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.skillsP1 {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background-color: #92c7cf;
+}
+.skillsP2 {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #96abac;
+}
+.skillsP3 {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-color: #505455;
+  animation-delay: 10s;
+}
+
+.skillsP4 {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-color: #505455;
+}
+.skillsP5 {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #96abac;
+}
+.skillsP6 {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background-color: #92c7cf;
+}
+.skillsMain {
+  position: relative;
+  width: 100%;
+  height: 1400px;
+  background-color: #2f2f2f;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1000px) {
+  .skillsMain {
+    height: 1600px;
+  }
+}
+
+.skillsMain h1 {
+  position: relative;
+  top: 130px;
+  right: 150px;
+  text-align: right;
+  color: #ffffff;
+  border-bottom: 3px solid white;
+}
+
+.skill {
+  position: relative;
+  top: 250px;
+  padding: 20px;
+  text-align: center;
+}
+.skill span {
+  margin: 20px;
+}
+.skillGroup {
+  margin-bottom: 120px;
+}
+.skill img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  padding: 2px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border: 3px solid #ffffff6e;
+  padding: 10px;
+  background-color: #ffffff15;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.skill img:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #ffffff73;
+}
+
+.projects {
+  position: relative;
+  width: 100%;
+  height: 2800px;
+  background-image: url(../images/study/main_library.jpg);
+  background-size: cover;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  color: #ffffff;
+}
+.projectCover {
+  background-color: #000000;
+  opacity: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+.projects h1 {
+  position: relative;
+  top: 130px;
+  left: 150px;
+  border-bottom: 3px solid white;
+}
+
+.project {
+  position: relative;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 75%;
+  height: 400px;
+  margin-bottom: 150px;
+  background-color: #e8e5e1c0;
+  border-radius: 50px;
+  transition: 0.2s ease-in-out;
+}
+@media screen and (min-width: 1623px) {
+  .project {
+    width: 60%;
+  }
+}
+.project:hover {
+  transform: translate(-50%) perspective(1500px) rotateY(20deg);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  background-color: #e8e5e1;
+}
+
+.projectLink {
+  background-color: #ffffff91;
+  border-radius: 20pt;
+  padding: 1pt 5pt 1pt 5pt;
+}
+.projectLink:hover {
+  background-color: #76a6adb3;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.project2 .project,
+.project4 .project {
+  background-color: #bbdcdec0 !important;
+}
+.project2 .project:hover,
+.project4 .project:hover {
+  background-color: #bbdcde !important;
+}
+
+.project img {
+  position: relative;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.project2 img {
+  left: 90%;
+  transform: translate(-210px, -50%);
+}
+.project img:hover {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+.project2 img:hover {
+  left: 65%;
+}
+@media screen and (max-width: 1123px) {
+  .project img {
+    width: 100px;
+    height: 100px;
+    left: 5%;
+    top: 10%;
+    transform: translateY(-15%);
+  }
+  .project2 img {
+    left: 95%;
+    transform: translate(-100px, -10%);
+  }
+  .project2 img:hover {
+    left: 40%;
+  }
+}
+#projectText {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  padding: 50px;
+  height: 300px;
+  overflow-y: scroll;
+  color: #4d4d4d;
+}
+.project2 #projectText {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  right: 300px;
+  padding: 50px;
+  height: 300px;
+  overflow-y: scroll;
+  direction: rtl;
+}
+
+#projectText p:nth-child(1) {
+  color: #679096;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+#projectText p:nth-child(2) {
+  font-size: 1.2em;
+}
+#projectText p:nth-child(3) {
+  font-size: 0.8em;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1123px) {
+  #projectText {
+    position: absolute;
+    left: 100px;
+  }
+  .project2 #projectText {
+    position: absolute;
+    left: 0px;
+    right: 120px;
+  }
+}
+
+.contact {
+  position: relative;
+  top: 400px;
+  padding: 25px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  width: 200px;
+  height: 100px;
+  background-color: #92c7cf92;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.contact a {
+  font-size: 0.8em;
+  color: rgb(48, 48, 48);
+}
+.contact p {
+  font-size: 0.8em;
+  color: rgb(48, 48, 48);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.slide-in-right {
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-left {
+  -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.scale-up-ver-top {
+  position: relative;
+}
+
+.scale-up-ver-top p {
+  opacity: 0; /* 초기에 숨겨둡니다. */
+}
+
+.scale-up-ver-top p:nth-child(1) {
+  animation: scale-up-ver-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.scale-up-ver-top p:nth-child(2) {
+  animation: scale-up-ver-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.25s both;
+}
+
+.scale-up-ver-top p:nth-child(3) {
+  animation: scale-up-ver-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+}
+
+@keyframes scale-up-ver-top {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 100% 0%;
+    opacity: 0; /* 추가: 처음에 숨겨둔 상태로 시작 */
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+    opacity: 1; /* 추가: 애니메이션이 진행되면서 나타나게 함 */
+  }
+}
+
+.fade-in-fwd {
+  -webkit-animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}

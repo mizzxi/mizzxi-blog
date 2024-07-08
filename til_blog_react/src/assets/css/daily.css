@@ -1,0 +1,79 @@
+.daily {
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  padding-top: 100px;
+}
+.viewBtn {
+  position: absolute;
+  left: auto;
+  right: 80px;
+  z-index: 1;
+}
+.viewBtn button {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+.viewBtn button img {
+  width: 20px;
+  height: 20px;
+}
+
+.dailyPostBox {
+  position: relative;
+  width: 600px;
+  left: 50%;
+  transform: translate(-50%);
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+.dailyProfile {
+  border-radius: 100%;
+  margin-right: 10px;
+  float: left;
+}
+.dailyPost {
+  margin: 10px 0px 30px 0px;
+}
+.dailyPostImg {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  top: -30%;
+  object-fit: cover;
+}
+.dailyPost img {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.dailyPost p {
+  margin-top: 10px;
+}
+.dailyPost p div {
+  font-weight: bold;
+}
+.dailyPost p pre {
+  margin-top: 20px;
+}
+.dailyPost hr {
+  margin: 30px;
+}
+
+.smallPost {
+  position: relative;
+  width: 45%;
+  float: left;
+  margin: 15px;
+}
+.smallPostImg {
+  margin: 20px 0px 20px 0px;
+  width: 100%;
+  object-fit: cover;
+}
+.smallPostReactImg {
+  margin: 10px 10px 10px 0px;
+}

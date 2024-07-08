@@ -1,0 +1,100 @@
+.post {
+  position: relative;
+  margin-top: 250px;
+  padding-bottom: 250px;
+  font-family: "Noto Sans KR", sans-serif;
+  left: 15%;
+  margin-right: 40%;
+  transform: translate(-15%);
+}
+.projectPost {
+  position: relative;
+  width: 80%;
+  padding-top: 250px;
+  padding-bottom: 150px;
+  font-family: "Noto Sans KR", sans-serif;
+  left: 50%;
+  transform: translate(-50%);
+}
+.post img,
+.projectPost img {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.middle {
+  text-align: center;
+}
+
+#gif,
+#gif2 {
+  position: relative;
+  width: 15%;
+  margin: 7px;
+  float: right;
+  margin-left: 40px;
+  left: 0%;
+  transform: translate(0%);
+}
+.miniImg {
+  width: 50% !important;
+  margin: 20px;
+}
+.postText,
+.projectPost img {
+  font-size: 120%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 1023px) {
+  .post {
+    width: 52%;
+  }
+  .postText {
+    font-size: 14pt;
+  }
+
+  .projectPost {
+    width: 60%;
+  }
+}
+
+.list {
+  list-style: decimal;
+  line-height: 2em;
+}
+.postTag ul {
+  list-style: none;
+}
+.postTag li {
+  float: left;
+  margin-left: 12px;
+  font-size: 0.8em;
+  color: rgb(112, 112, 112);
+  background-color: #d6f0f1;
+  border-radius: 20px;
+  padding: 2px 6px 2px 6px;
+}
+.postTag li:nth-child(even) {
+  background-color: #f3eed1;
+}
+
+mark {
+  background-color: #d6f0f1b4;
+}
+mark.y {
+  background-color: #f8f8d9bd;
+}
+
+.textColor {
+  color: cadetblue;
+}
+
+.lock {
+  filter: blur(5px);
+}

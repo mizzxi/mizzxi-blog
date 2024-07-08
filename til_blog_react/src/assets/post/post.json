@@ -1,0 +1,134 @@
+{
+  "all": [
+    {
+      "mainTitle": "🔔 What is a TIL blog?",
+      "subTitle": "mizzxi의 TIL 블로그 [프론트엔드]",
+      "date": "2024.01.01",
+      "link": "tilExplain"
+    },
+    {
+      "mainTitle": "Graph Dentistry",
+      "subTitle": "막대그래프 왜곡 탐지 및 교정 시스템 개발과 논문 작성 [프론트엔드]",
+      "date": "2024.01.28",
+      "link": "project-graph"
+    },
+    {
+      "mainTitle": "졸업작품",
+      "subTitle": "여성 의류 쇼핑몰 전략 대시보드 제작 [백엔드]",
+      "date": "2024.01.20",
+      "link": "project-dali"
+    },
+    {
+      "mainTitle": "선거 전략 대시보드",
+      "subTitle": "2022 대선 데이터를 활용한 분석 대시보드 [프론트엔드]",
+      "date": "2024.01.30",
+      "link": "project-vote"
+    },
+    {
+      "mainTitle": "My Little Friend",
+      "subTitle": "안드로이드 앱으로 즐기는 간단한 육성 게임 [프론트엔드]",
+      "date": "2024.02.01",
+      "link": "project-mlfApp"
+    },
+    {
+      "mainTitle": "SubwayGame",
+      "subTitle": "친구들과 함께하는 지하철 1호선 역이름 말하기 게임 [백 & 프론트엔드]",
+      "date": "2024.02.16",
+      "link": "project-subwayGame"
+    },
+    {
+      "mainTitle": "컴퓨터 구조와 운영체제",
+      "subTitle": "#1 컴퓨터 구조",
+      "date": "2024.02.20",
+      "link": "til-240220"
+    },
+    {
+      "mainTitle": "컴퓨터 구조와 운영체제",
+      "subTitle": "#2 CPU",
+      "date": "2024.02.22",
+      "link": "til-240222"
+    },
+    {
+      "mainTitle": "컴퓨터 구조와 운영체제",
+      "subTitle": "#3 메모리",
+      "date": "2024.03.19",
+      "link": "til-240319"
+    },
+    {
+      "mainTitle": "포토샵과 일러스트",
+      "subTitle": "식당 메뉴판과 판넬, 홍보 현수막 제작기 [디자인]",
+      "date": "2024.03.19",
+      "link": "project-design"
+    }
+  ],
+  "til": [
+    {
+      "mainTitle": "🔔 What is a TIL blog?",
+      "subTitle": "mizzxi의 TIL 블로그",
+      "date": "2024.01.01",
+      "link": "tilExplain"
+    },
+    {
+      "mainTitle": "컴퓨터 구조와 운영체제",
+      "subTitle": "#1 컴퓨터 구조",
+      "date": "2024.02.20",
+      "link": "til-240220"
+    },
+    {
+      "mainTitle": "컴퓨터 구조와 운영체제",
+      "subTitle": "#2 CPU",
+      "date": "2024.02.22",
+      "link": "til-240222"
+    },
+    {
+      "mainTitle": "컴퓨터 구조와 운영체제",
+      "subTitle": "#3 메모리",
+      "date": "2024.03.19",
+      "link": "til-240319"
+    }
+  ],
+  "project": [
+    {
+      "mainTitle": "Graph Dentistry",
+      "subTitle": "막대그래프 왜곡 탐지 및 교정 시스템 개발과 논문 작성 [프론트엔드]",
+      "date": "2024.01.28",
+      "img": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fug4Zy%2FbtsFuJSUI2o%2FAJqmEIupBL6fUZgR2aboK0%2Fimg.jpg",
+      "link": "project-graph"
+    },
+    {
+      "mainTitle": "졸업작품",
+      "subTitle": "여성 의류 쇼핑몰 전략 대시보드 제작 [백엔드]",
+      "date": "2024.01.20",
+      "img": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHrk0n%2FbtsFxWRRWnB%2Fvf3hePAMmQTFppeJKqDQmk%2Fimg.jpg",
+      "link": "project-dali"
+    },
+    {
+      "mainTitle": "선거 전략 대시보드",
+      "subTitle": "2022 대선 데이터를 활용한 분석 대시보드 [프론트엔드]",
+      "date": "2024.01.30",
+      "img": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FzbHor%2FbtsFuHt5CCZ%2FDYGHUBkUK88jE3xyXZ8SBk%2Fimg.jpg",
+      "link": "project-vote"
+    },
+    {
+      "mainTitle": "My Little Friend",
+      "subTitle": "안드로이드 앱으로 즐기는 간단한 육성 게임 [프론트엔드]",
+      "date": "2024.02.01",
+      "img": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc6d1js%2FbtsFCg8O9x0%2FVfDZcLc0HA3KJEKP2yyYs1%2Fimg.jpg",
+      "link": "project-mlfApp"
+    },
+    {
+      "mainTitle": "SubwayGame",
+      "subTitle": "친구들과 함께하는 지하철 1호선 역이름 말하기 게임 [백 & 프론트엔드]",
+      "date": "2024.02.16",
+      "img": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FnMpr5%2FbtsFAgIIkas%2FqtkS94j8M2wOzG23wY5tl1%2Fimg.jpg",
+      "link": "project-subwayGame"
+    },
+    {
+      "mainTitle": "포토샵과 일러스트",
+      "subTitle": "식당 메뉴판과 판넬, 홍보 현수막 제작기 [디자인]",
+      "date": "2024.03.19",
+      "img": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F8qzFe%2FbtsFR8rlGi0%2F8cOtawbOjSSnihFjXNlUok%2Fimg.jpg",
+      "link": "project-design"
+    }
+  ]
+}
